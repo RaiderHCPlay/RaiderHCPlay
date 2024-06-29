@@ -5,7 +5,7 @@
 - 📫 How to reach me: discord: RaiderHCPlay
 - 😄 Pronouns: he
 - ⚡ Fun fact: The only thing I know for real is that sometimes bad ideas are the only option but remember that you can't give up.
--certifications:
+- certifications:
 Python - PCEP
 
 <!---
