@@ -1,5 +1,5 @@
 - 👋 Hi, I’m RaiderHCPlay
-- 👀 I’m interested in programming in JS/TS and driving
+- 👀 I’m interested in programming in JS/TS
 - 🌱 I’m currently learning JavaScript
 - 💞️ I’m looking to collaborate on (none for now)
 - 📫 How to reach me: discord: RaiderHCPlay
