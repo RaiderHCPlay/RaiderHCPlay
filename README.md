@@ -1,2 +1,2 @@
-Hi! I'm Paweł Fabrycki (also known as RaiderHCPlay), a TypeScript Developer. I create desktop apps like Shutdownator (still in making). I love writing in TypeScript.
+Hi! I'm Paweł Fabrycki (also known as RaiderHCPlay), a TypeScript Programmer. I love Next.js framework.
 Currently student.
