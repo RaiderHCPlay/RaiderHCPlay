@@ -10,7 +10,7 @@ Hi! I'm RaiderHCPlay, also known as Paweł. I'm web developer.
 
 <details>
   <summary><b>Wakatime stats</b></summary>
-  <a href="https://wakatime.com" target="_blank"><img src="https://wakatime.com/share/@RaiderHCPlay/654097ea-4312-4b22-b6b8-fd416a885677.png"/></a>
+  <a href="https://wakatime.com/@RaiderHCPlay" target="_blank"><img src="https://wakatime.com/share/@RaiderHCPlay/654097ea-4312-4b22-b6b8-fd416a885677.png"/></a>
 </details>
 
 ***
