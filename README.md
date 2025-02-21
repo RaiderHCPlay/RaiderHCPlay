@@ -1,4 +1,4 @@
-Hi! I'm RaiderHCPlay, also known as Paweł. I'm web developer.
+Hi! I'm RaiderHCPlay, also known as Paweł. I'm a web developer.
 ***
 
 ### Projects
