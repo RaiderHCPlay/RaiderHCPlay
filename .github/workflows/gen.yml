@@ -1,0 +1,33 @@
+name: Generate README
+on: 
+  push:
+    branches:
+      - "main"
+  pull_request:
+
+  jobs:
+    generate:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+        - name: Install pnpm
+          uses: pnpm/action-setup@v4
+          with:
+            version: 9
+            run_install: false
+        - name: Setup Node
+          uses: actions/setup-node@v4
+          with:
+            node-version: '23.x'
+            cache: 'pnpm'
+        - name: Install dependencies
+          run: pnpm install
+        - name: Generate README
+          run: pnpm generate:readme
+        - name: Commit
+          uses: EndBug/add-and-commit@v9
+          with:
+            add: 'README.md'
+            default_author: github_actor
+            message: "docs: generated `README.md` file" 
