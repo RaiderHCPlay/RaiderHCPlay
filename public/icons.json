@@ -1,0 +1,22 @@
+[
+    {
+        "name": "TypeScript",
+        "icon": "https://cdn.simpleicons.org/typescript/74c7ec"
+    },
+    {
+        "name": "React",
+        "icon": "https://cdn.simpleicons.org/react/74c7ec"
+    },
+    {
+        "name": "Next.js",
+        "icon": "https://cdn.simpleicons.org/next.js/11111b"
+    },
+    {
+        "name": "Sass",
+        "icon": "https://cdn.simpleicons.org/sass/f38ba8"
+    },
+    {
+        "name": "Less",
+        "icon": "https://cdn.simpleicons.org/less/89b4fa"
+    }
+]

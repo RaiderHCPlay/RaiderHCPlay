@@ -1,0 +1,101 @@
+//use mixins
+@use 'mixins';
+
+//imports
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+// Variables
+
+[data-theme='latte'] {
+    --base: rgb(239, 241, 245);
+    --text: rgb(76, 79, 105);
+    --mauve: rgb(136, 57, 239);
+    --crust: rgb(220, 224, 232);
+    --mantle: rgb(230, 233, 239);
+}
+
+[data-theme='macchiato'] {
+    --crust: rgb(24, 25, 38);
+    --base: rgb(36, 39, 58);
+    --text: rgb(202, 211, 245);
+    --mauve: rgb(198, 160, 246);
+    --mantle: rgb(41, 44, 60);
+}
+
+[data-theme='frappe'] {
+    --base: rgb(48, 52, 70);
+    --text: rgb(198, 208, 245);
+    --mauve: rgb(202, 158, 230);
+    --crust: rgb(35, 38, 52);
+    --mantle: rgb(30, 32, 48);
+}
+
+[data-theme='mocha'] {
+    --base: rgb(30, 30, 46);
+    --text: rgb(205, 214, 244);
+    --mauve: rgb(203, 166, 247);
+    --crust: rgb(17, 17, 27);
+    --mantle: rgb(24, 24, 37);
+}
+
+:root {
+    color: var(--text);
+    background-color: var(--base);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+// header styling
+header {
+    @include mixins.flex();
+    background-color: var(--crust);
+    height: 60px;
+    with: 100%;
+
+    .wrapper {
+        width: 60%;
+        @include mixins.flex(center, space-between);
+    }
+
+    .header-left {
+        a {
+            @include mixins.flex();
+
+            img {
+                border-radius: 50px;
+                border: 2px solid var(--base);
+            }
+        }
+    }
+
+    .header-right {
+        width: 20%;
+        @include mixins.flex(center, space-evenly);
+        a {
+            color: var(--text);
+            text-decoration: none;
+            border-radius: 15px;
+            padding: 3px;
+
+            &:hover,
+            &:active {
+                color: var(--mantle);
+                background-color: var(--mauve);
+            }
+        }
+    }
+}
+
+//footer styling
+.footer-container {
+    @include mixins.flex(center, center, column);
+    select {
+        margin-top: 5px;
+        background-color: var(--mantle);
+        color: var(--text);
+        border-color: var(--crust);
+    }
+}
