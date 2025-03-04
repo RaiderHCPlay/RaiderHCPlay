@@ -5,18 +5,20 @@ import { useState, useLayoutEffect } from 'react'
 type Flavor = 'lattle' | 'frappe' | 'macchiato' | 'mocha'
 
 export default function ThemeToggle() {
-    const [flavor, setFlavor] = useState<Flavor>(
-        (localStorage.getItem('raiderhcplayioTheme') as Flavor) || 'mocha'
-    )
+    const [flavor, setFlavor] = useState<Flavor>('mocha')
 
     useLayoutEffect(() => {
-        localStorage.setItem('raiderhcplayioTheme', flavor)
+        setFlavor(localStorage.getItem('raiderhcplayTheme') as Flavor)
+    }, [])
+
+    useLayoutEffect(() => {
+        localStorage.setItem('raiderhcplayTheme', flavor)
         document.documentElement.setAttribute('data-theme', flavor)
     }, [flavor])
 
     return (
         <select
-            defaultValue={flavor}
+            value={flavor}
             onChange={(e) => setFlavor(e.target.value as Flavor)}
         >
             <option value={'latte'}>Latte</option>
