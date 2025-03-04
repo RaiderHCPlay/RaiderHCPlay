@@ -4,8 +4,6 @@ Hi! I'm RaiderHCPlay, also known as Paweł. I'm a web developer.
 ### Projects
 
 <span>- `RaiderHCPlay` My repo for github profile and website</span>
-
-<span>- `Catppuccin userstyles` 🖌 Soothing pastel userstyles </span>
 ***
 ### Tech Stack
 
