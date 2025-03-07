@@ -54,3 +54,9 @@
 * {
     margin: 0;
 }
+
+a {
+    transition:
+        background 0.4s,
+        color 0.4s;
+}

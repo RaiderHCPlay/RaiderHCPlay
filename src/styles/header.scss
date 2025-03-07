@@ -40,9 +40,6 @@ header {
             &:active {
                 color: var(--mantle);
                 background-color: var(--mauve);
-                transition:
-                    background 0.2s,
-                    color 0.2s;
             }
         }
     }
