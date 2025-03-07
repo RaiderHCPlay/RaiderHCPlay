@@ -6,7 +6,7 @@
 
 // Variables
 
-[data-theme='latte'] {
+:root {
     --base: rgb(239, 241, 245);
     --text: rgb(76, 79, 105);
     --mauve: rgb(136, 57, 239);
@@ -42,6 +42,9 @@
     color: var(--text);
     background-color: var(--base);
     font-family: 'Ubuntu', sans-serif;
+    transition:
+        background 0.5s,
+        color 0.5s;
 }
 
 * {
@@ -54,6 +57,9 @@ header {
     background-color: var(--crust);
     height: 60px;
     with: 100%;
+    transition:
+        background 0.5s,
+        color 0.5s;
 
     .wrapper {
         width: 60%;
@@ -84,6 +90,9 @@ header {
             &:active {
                 color: var(--mantle);
                 background-color: var(--mauve);
+                transition:
+                    background 0.2s,
+                    color 0.2s;
             }
         }
     }

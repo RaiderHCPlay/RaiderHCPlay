@@ -1,7 +1,7 @@
 export default function Home() {
     return (
-        <>
-            <h1>test</h1>
-        </>
+        <div className={'home-wrapper'}>
+            <h1>Page in development</h1>
+        </div>
     )
 }

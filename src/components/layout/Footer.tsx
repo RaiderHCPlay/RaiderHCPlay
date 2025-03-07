@@ -1,12 +1,12 @@
 'use client'
 
-import { useState, useLayoutEffect } from 'react'
+import { useState, useEffect } from 'react'
 import ThemeToggle from '@/components/ui/Toggle'
 
 export default function Footer() {
     const [year, setYear] = useState<number | undefined>()
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         setYear(new Date().getFullYear())
     }, [])
 

@@ -2,7 +2,7 @@
 
 import { useState, useLayoutEffect } from 'react'
 
-type Flavor = 'lattle' | 'frappe' | 'macchiato' | 'mocha'
+type Flavor = 'latte' | 'frappe' | 'macchiato' | 'mocha'
 
 export default function ThemeToggle() {
     const [flavor, setFlavor] = useState<Flavor>('mocha')
@@ -13,7 +13,9 @@ export default function ThemeToggle() {
 
     useLayoutEffect(() => {
         localStorage.setItem('raiderhcplayTheme', flavor)
-        document.documentElement.setAttribute('data-theme', flavor)
+        if (flavor === 'latte')
+            document.documentElement.removeAttribute('data-theme')
+        else document.documentElement.setAttribute('data-theme', flavor)
     }, [flavor])
 
     return (
