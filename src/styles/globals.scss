@@ -1,5 +1,7 @@
 //use mixins
 @use 'mixins';
+@use 'footer';
+@use 'header';
 
 //imports
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
@@ -38,6 +40,8 @@
     --mantle: rgb(24, 24, 37);
 }
 
+// global styling
+
 :root {
     color: var(--text);
     background-color: var(--base);
@@ -49,62 +53,4 @@
 
 * {
     margin: 0;
-}
-
-// header styling
-header {
-    @include mixins.flex();
-    background-color: var(--crust);
-    height: 60px;
-    with: 100%;
-    transition:
-        background 0.5s,
-        color 0.5s;
-
-    .wrapper {
-        width: 60%;
-        @include mixins.flex(center, space-between);
-    }
-
-    .header-left {
-        a {
-            @include mixins.flex();
-
-            img {
-                border-radius: 50px;
-                border: 2px solid var(--base);
-            }
-        }
-    }
-
-    .header-right {
-        width: 20%;
-        @include mixins.flex(center, space-evenly);
-        a {
-            color: var(--text);
-            text-decoration: none;
-            border-radius: 15px;
-            padding: 3px;
-
-            &:hover,
-            &:active {
-                color: var(--mantle);
-                background-color: var(--mauve);
-                transition:
-                    background 0.2s,
-                    color 0.2s;
-            }
-        }
-    }
-}
-
-//footer styling
-.footer-container {
-    @include mixins.flex(center, center, column);
-    select {
-        margin-top: 5px;
-        background-color: var(--mantle);
-        color: var(--text);
-        border-color: var(--crust);
-    }
 }
