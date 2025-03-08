@@ -3,10 +3,10 @@
 // home styling
 .home-wrapper {
     text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     @include mixins.flex();
-    @include mixins.md(100%, 350px);
+    @include mixins.md(100%, 250px);
     @include mixins.sm(100%, 200px);
 
     .right-content {
@@ -17,7 +17,21 @@
 
     img {
         border-radius: 50%;
-        @include mixins.md(350px, 350px);
-        @include mixins.sm(110px, 110px);
+        @include mixins.md(200px, 200px);
+        @include mixins.sm(150px, 150px);
+    }
+    a {
+        color: var(--saphire);
+        font-size: 25px;
+        text-decoration: underline transparent;
+        border-radius: 15px;
+        padding: 3px;
+        transition: 0.2s;
+
+        &:hover,
+        &:active {
+            color: var(--mauve);
+            text-decoration: underline;
+        }
     }
 }

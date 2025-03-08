@@ -12,9 +12,9 @@ export default function Home() {
             />
             <div className={'right-content'}>
                 <h1>RaiderHCPlay</h1>
-                <article>A web developer</article>
-                <Link href={'/about'}>About</Link>
-                <Link href={'/projects'}>Projects</Link>
+                <h2>A web developer</h2>
+                <Link href={'/about'}>About page</Link>
+                <Link href={'/projects'}>Projects page</Link>
             </div>
         </div>
     )
