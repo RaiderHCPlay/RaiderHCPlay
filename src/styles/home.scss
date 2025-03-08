@@ -1,5 +1,23 @@
+@use 'mixins';
+
+// home styling
 .home-wrapper {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    @include mixins.flex();
+    @include mixins.md(100%, 350px);
+    @include mixins.sm(100%, 200px);
+
+    .right-content {
+        padding-left: 2%;
+        display: grid;
+        row-gap: 15px;
+    }
+
+    img {
+        border-radius: 50%;
+        @include mixins.md(350px, 350px);
+        @include mixins.sm(110px, 110px);
+    }
 }
