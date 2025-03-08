@@ -4,3 +4,21 @@
     justify-content: $justify;
     flex-direction: $direction;
 }
+
+@mixin md($width, $height) {
+    & {
+        @media (width >= 1024px) {
+            width: $width;
+            height: $height;
+        }
+    }
+}
+
+@mixin sm($width, $height) {
+    & {
+        @media (width < 1024px) {
+            width: $width;
+            height: $height;
+        }
+    }
+}

@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
     title: 'RaiderHCPlay',
+    icons: 'https://avatars.githubusercontent.com/u/170134946?v=4',
     description: "RaiderHCPlay's personal website",
     keywords: ['RaiderHCPlay', 'github', 'githubio', 'portfolio', 'dev'],
 }
