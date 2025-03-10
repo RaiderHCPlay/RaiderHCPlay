@@ -9,11 +9,11 @@ projects.map((project) => {
     let subs: string[] = []
     if (project.sublinks) {
         project.sublinks.map((link) => {
-            subs.push(`<a href=${link.url}>${link.name}</a>`)
+            subs.push(`<a href=${link.url} target="_blank">${link.name}</a>`)
         })
     }
     projectsArray.push(
-        `<span>- <a href=${project.github}>\`${project.name}\`</a> ${project.description} ${subs.join('')}</span>`
+        `<span>- <a href=${project.github} target="_blank">\`${project.name}\`</a> ${project.description} ${subs.join('')}</span>`
     )
 })
 
