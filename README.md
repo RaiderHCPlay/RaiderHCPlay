@@ -3,9 +3,9 @@ Hi! I'm RaiderHCPlay, a web developer.
 ***
 ### Projects
 
-<span>- `RaiderHCPlay` My repo for github profile and website</span>
+<span>- <a href=https://github.com/RaiderHCPlay/RaiderHCPlay target="_blank">`RaiderHCPlay`</a> My repo for github profile and website </span>
 
-<span>- `catppuccin/userstyles` Catppuccin userstyles, currently maintainer of `React.dev`</span>
+<span>- <a href=https://github.com/catppuccin/userstyles target="_blank">`catppuccin/userstyles`</a> Catppuccin userstyles, currently maintainer of <a href=https://github.com/catppuccin/userstyles/tree/main/styles/react.dev target="_blank">React.dev</a></span>
 ***
 ### Tech Stack
 
