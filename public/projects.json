@@ -7,8 +7,14 @@
     },
     {
         "name": "catppuccin/userstyles",
-        "description": "Catppuccin userstyles, currently maintainer of `React.dev`",
+        "description": "Catppuccin userstyles, currently maintainer of",
         "github": "https://github.com/catppuccin/userstyles",
-        "badge": "https://wakatime.com/badge/user/16a607a2-a819-4ae5-b4fd-490342b99c3d/project/408f458f-9a85-4c09-9515-ce79383a0559.svg"
+        "badge": "https://wakatime.com/badge/user/16a607a2-a819-4ae5-b4fd-490342b99c3d/project/408f458f-9a85-4c09-9515-ce79383a0559.svg",
+        "sublinks": [
+            {
+                "name": "React.dev",
+                "url": "https://github.com/catppuccin/userstyles/tree/main/styles/react.dev"
+            }
+        ]
     }
 ]
