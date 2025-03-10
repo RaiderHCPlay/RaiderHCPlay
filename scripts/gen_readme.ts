@@ -13,7 +13,7 @@ projects.map((project) => {
         })
     }
     projectsArray.push(
-        `<span>- <a href="${project.github}" target="_blank">\`${project.name}\`</a> ${project.description} ${subs.join('')}</span>`
+        `<span>- <a href="${project.github}" target="_blank">\`${project.name}\`</a> ${project.description} ${subs.join(', ')}</span>`
     )
 })
 
