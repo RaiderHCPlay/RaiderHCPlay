@@ -6,8 +6,14 @@ let projectsArray: string[] = []
 let iconsArray: string[] = []
 
 projects.map((project) => {
+    let subs: string[] = []
+    if (project.sublinks) {
+        project.sublinks.map((link) => {
+            subs.push(`<a href=${link.url}>${link.name}</a>`)
+        })
+    }
     projectsArray.push(
-        `<span>- \`${project.name}\` ${project.description}</span>`
+        `<span>- <a href=${project.github}>\`${project.name}\`</a> ${project.description} ${subs.join('')}</span>`
     )
 })
 
