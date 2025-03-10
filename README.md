@@ -3,13 +3,13 @@ Hi! I'm RaiderHCPlay, a web developer.
 ***
 ### Projects
 
-<span>- <a href=https://github.com/RaiderHCPlay/RaiderHCPlay target="_blank">`RaiderHCPlay`</a> My repo for github profile and website </span>
+<span>- <a href="https://github.com/RaiderHCPlay/RaiderHCPlay" target="_blank">`RaiderHCPlay`</a> My repo for github profile and website </span>
 
-<span>- <a href=https://github.com/catppuccin/userstyles target="_blank">`catppuccin/userstyles`</a> Catppuccin userstyles, currently maintainer of <a href=https://github.com/catppuccin/userstyles/tree/main/styles/react.dev target="_blank">React.dev</a></span>
+<span>- <a href="https://github.com/catppuccin/userstyles" target="_blank">`catppuccin/userstyles`</a> Catppuccin userstyles, currently maintainer of <a href="https://github.com/catppuccin/userstyles/tree/main/styles/react.dev" target="_blank">React.dev</a></span>
 ***
 ### Tech Stack
 
-<img src=https://cdn.simpleicons.org/typescript/74c7ec alt=TypeScript width="40" height="40"> <img src=https://cdn.simpleicons.org/react/74c7ec alt=React width="40" height="40"> <img src=https://cdn.simpleicons.org/next.js/11111b alt=Next.js width="40" height="40"> <img src=https://cdn.simpleicons.org/sass/f38ba8 alt=Sass width="40" height="40"> <img src=https://cdn.simpleicons.org/less/89b4fa alt=Less width="40" height="40">
+<img src="https://cdn.simpleicons.org/typescript/74c7ec" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react/74c7ec" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js/11111b" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass/f38ba8" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/less/89b4fa" alt="Less" width="40" height="40">
 ***
 
 <details>
