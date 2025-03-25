@@ -1,21 +1,29 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import ProjectsComponent from '@/components/layout/home/Projects'
+import PaletteComponent from '@/components/layout/home/Palette'
+import MediaComponent from '@/components/layout/home/Media'
+import TechComponent from '@/components/layout/home/Tech'
 
 export default function Home() {
     return (
         <div className={'home-wrapper'}>
-            <Image
-                alt={'RaiderHCPlay avatar'}
-                width={'110'}
-                height={'110'}
-                src={'https://avatars.githubusercontent.com/u/170134946?v=4'}
-            />
-            <div className={'right-content'}>
-                <h1>RaiderHCPlay</h1>
-                <h2>A web developer</h2>
-                <Link href={'/about'}>About page</Link>
-                <Link href={'/projects'}>Projects page</Link>
+            <div className={'top-content'}>
+                <Image
+                    alt={'RaiderHCPlay avatar'}
+                    width={'50'}
+                    height={'50'}
+                    className={'avatar'}
+                    src={
+                        'https://avatars.githubusercontent.com/u/170134946?v=4'
+                    }
+                />
+                <h2>RaiderHCPlay</h2>
             </div>
+            <div className={'about-content'}></div>
+            <TechComponent />
+            <ProjectsComponent />
+            <PaletteComponent />
+            <MediaComponent />
         </div>
     )
 }
