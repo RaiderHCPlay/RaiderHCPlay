@@ -21,7 +21,7 @@
         @include mixins.sm(150px, 150px);
     }
     a {
-        color: var(--saphire);
+        color: var(--sapphire);
         font-size: 25px;
         text-decoration: underline transparent;
         border-radius: 15px;
@@ -30,7 +30,7 @@
 
         &:hover,
         &:active {
-            color: var(--mauve);
+            color: var(--purple);
             text-decoration: underline;
         }
     }

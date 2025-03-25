@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import ThemeToggle from '@/components/ui/Toggle'
 
 export default function Footer() {
     const [year, setYear] = useState<number | undefined>()
@@ -13,7 +12,6 @@ export default function Footer() {
     return (
         <div className={'footer-container'}>
             <footer>© {year} RaiderHCPlay</footer>
-            <ThemeToggle />
         </div>
     )
 }
