@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useLayoutEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 
 export default function TechComponent() {
@@ -14,7 +14,7 @@ export default function TechComponent() {
         })
     }, [])
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         fetchTech()
     }, [])
 
