@@ -1,3 +1,5 @@
+'use client'
+
 export default function PaletteComponent() {
     return (
         <>
@@ -5,6 +7,13 @@ export default function PaletteComponent() {
                 <summary>Color palette</summary>
                 <h4>
                     Base <span style={{ background: '#571539' }} />
+                    <button
+                        onClick={() => {
+                            navigator.clipboard.writeText('#571539')
+                        }}
+                    >
+                        hex: #571539
+                    </button>
                 </h4>
                 <h4>
                     Orange <span style={{ background: '#f27a23' }} />
