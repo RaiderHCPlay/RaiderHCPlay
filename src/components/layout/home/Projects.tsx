@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import Image from 'next/image'
 
 export default function ProjectsComponent() {
     const [projects, setProjects] = useState<Projects[]>([])
@@ -21,13 +22,10 @@ export default function ProjectsComponent() {
         <>
             {projects && projects.length > 0 && (
                 <div className={'projects-content'}>
-			{projects.map((project, i) => {
-				return ( 
-				<div key={i}>
-					{project.name}
-				</div>)
-			})}
-		</div>
+                    {projects.map((project, i) => (
+                        <div key={i}>{project.name}</div>
+                    ))}
+                </div>
             )}
         </>
     )

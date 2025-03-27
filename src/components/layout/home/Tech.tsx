@@ -23,11 +23,11 @@ export default function TechComponent() {
             {tech && (
                 <div>
                     {tech.map((lang: Icons, i: number) => {
-                        return (
+                       return (
                             <Image
                                 key={i}
                                 src={`${lang.icon}`}
-                                alt={`${name} logo`}
+                                alt={`${lang.name} logo`}
                                 width={'50'}
                                 height={'50'}
                             />
