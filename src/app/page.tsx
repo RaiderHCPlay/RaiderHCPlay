@@ -20,7 +20,12 @@ export default function Home() {
                 <h2>RaiderHCPlay</h2>
             </div>
             <hr />
-            <div className={'about-content'}>About me in future</div>
+            <div className={'about-content'}>
+                Hi! I'm Paweł, also known as RaiderHCPlay. I'm a web developer.
+                I love TypeScript and I'm learning Rust. In free time I love
+                reading mangas, watching anime, playing games and listening to
+                Persona 3 Reload OST.
+            </div>
             <hr />
             <TechComponent />
             <hr />
