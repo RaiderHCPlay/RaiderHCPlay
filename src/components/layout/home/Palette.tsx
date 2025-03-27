@@ -1,3 +1,9 @@
 export default function PaletteComponent() {
-    return <div className={'palette-content'}></div>
+    return (
+        <>
+            <details className={'palette-content'}>
+                <summary>Color palette</summary>
+            </details>
+        </>
+    )
 }

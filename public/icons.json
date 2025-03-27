@@ -1,22 +1,22 @@
 [
     {
         "name": "TypeScript",
-        "icon": "https://cdn.simpleicons.org/typescript/74c7ec"
+        "icon": "https://cdn.simpleicons.org/typescript/a2b7e2"
     },
     {
         "name": "React",
-        "icon": "https://cdn.simpleicons.org/react/74c7ec"
+        "icon": "https://cdn.simpleicons.org/react/a2b7e2"
     },
     {
         "name": "Next.js",
-        "icon": "https://cdn.simpleicons.org/next.js/11111b"
+        "icon": "https://cdn.simpleicons.org/next.js/1c0000"
     },
     {
         "name": "Sass",
-        "icon": "https://cdn.simpleicons.org/sass/f38ba8"
+        "icon": "https://cdn.simpleicons.org/sass/ea578b"
     },
     {
         "name": "Less",
-        "icon": "https://cdn.simpleicons.org/less/89b4fa"
+        "icon": "https://cdn.simpleicons.org/less/483c90"
     }
 ]

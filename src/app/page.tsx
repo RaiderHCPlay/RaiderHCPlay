@@ -19,10 +19,15 @@ export default function Home() {
                 />
                 <h2>RaiderHCPlay</h2>
             </div>
-            <div className={'about-content'}></div>
+            <hr />
+            <div className={'about-content'}>About me in future</div>
+            <hr />
             <TechComponent />
+            <hr />
             <ProjectsComponent />
+            <hr />
             <PaletteComponent />
+            <hr />
             <MediaComponent />
         </div>
     )

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 
 export default function ProjectsComponent() {
@@ -23,7 +24,42 @@ export default function ProjectsComponent() {
             {projects && projects.length > 0 && (
                 <div className={'projects-content'}>
                     {projects.map((project, i) => (
-                        <div key={i}>{project.name}</div>
+                        <div key={i} className={'project'}>
+                            <div className={'left-content'}>
+                                <Link
+                                    href={`${project.github}`}
+                                    target={'_blank'}
+                                    alt={`${project.name} project`}
+                                >
+                                    {project.name}
+                                </Link>
+                                <article>
+                                    {project.description}
+                                    {project.sublinks &&
+                                        project.sublinks.map((sublink, i) => {
+                                            return (
+                                                <Link
+                                                    href={`${sublink.url}`}
+                                                    alt={`${sublink.name} sublink`}
+                                                    key={i}
+                                                    target={'_blank'}
+                                                >
+                                                    {' '}
+                                                    {sublink.name}
+                                                </Link>
+                                            )
+                                        })}
+                                </article>
+                            </div>
+                            <div className={'right-content'}>
+                                <Image
+                                    src={project.badge}
+                                    alt={`${project.name} wakatime badge`}
+                                    width={'130'}
+                                    height={'20'}
+                                />
+                            </div>
+                        </div>
                     ))}
                 </div>
             )}
