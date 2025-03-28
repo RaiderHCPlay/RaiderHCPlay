@@ -1,0 +1,86 @@
+@use '../../global/mixins';
+@use '../../global/globals';
+
+.projects-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+
+    @media (width >= 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.project {
+    background-color: var(--crust);
+    border: 2px solid var(--orange);
+    border-radius: 12px;
+    height: 90px;
+    @include mixins.flex();
+
+    img {
+        margin-right: 10px;
+
+        @media (width >= 1024px) {
+            margin-right: 0;
+            width: 130px;
+            height: 20px;
+        }
+    }
+
+    a {
+        color: var(--orange);
+        font-size: 12px;
+        margin-left: 10px;
+        text-decoration: none;
+
+        @media (width >= 1024px) {
+            margin-left: 0;
+            font-size: 16px;
+        }
+
+        &:hover {
+            color: var(--yellow);
+        }
+    }
+
+    article {
+        font-size: 10px;
+        margin-left: 10px;
+
+        @media (width >= 1024px) {
+            font-size: 16px;
+            margin-left: 0;
+        }
+
+        a {
+            margin-left: 0;
+            font-size: 10px;
+
+            @media (width >= 1024px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .left-content {
+        @include mixins.flex(flex-start, space-around, column);
+        height: 60%;
+        font-size: 8px;
+        width: 75%;
+
+        @media (width >= 1024px) {
+            font-size: 16px;
+        }
+    }
+
+    .right-content {
+        @include mixins.flex(center, flex-end, column);
+        height: 100%;
+        margin-bottom: 15px;
+
+        img {
+            background-color: var(--purple);
+        }
+    }
+}

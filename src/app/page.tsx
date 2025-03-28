@@ -1,21 +1,39 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import ProjectsComponent from '@/components/layout/home/Projects'
+import MediaComponent from '@/components/layout/home/Media'
+import TechComponent from '@/components/layout/home/Tech'
+import Footer from '@/components/layout/global/Footer'
 
 export default function Home() {
     return (
         <div className={'home-wrapper'}>
-            <Image
-                alt={'RaiderHCPlay avatar'}
-                width={'110'}
-                height={'110'}
-                src={'https://avatars.githubusercontent.com/u/170134946?v=4'}
-            />
-            <div className={'right-content'}>
-                <h1>RaiderHCPlay</h1>
-                <h2>A web developer</h2>
-                <Link href={'/about'}>About page</Link>
-                <Link href={'/projects'}>Projects page</Link>
+            <div className={'top-content'}>
+                <Image
+                    alt={'RaiderHCPlay avatar'}
+                    width={'50'}
+                    height={'50'}
+                    className={'avatar'}
+                    src={
+                        'https://avatars.githubusercontent.com/u/170134946?v=4'
+                    }
+                />
+                <h2>RaiderHCPlay</h2>
             </div>
+            <hr />
+            <div className={'about-content'}>
+                <h2>Something about me</h2>
+                Hi! I&apos;m Paweł, also known as RaiderHCPlay. I&apos;m a web developer.
+                I love TypeScript and I&apos;m learning Rust. In free time I love
+                reading mangas, watching anime, playing games and listening to
+                Persona 3 Reload OST.
+            </div>
+            <hr />
+            <TechComponent />
+            <hr />
+            <ProjectsComponent />
+            <hr />
+            <MediaComponent />
+            <Footer />
         </div>
     )
 }
