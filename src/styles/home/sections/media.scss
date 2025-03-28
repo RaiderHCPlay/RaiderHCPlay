@@ -1,0 +1,10 @@
+@use '../../global/mixins';
+
+.media-content {
+    @include mixins.flex();
+    margin-bottom: 10px;
+
+    a {
+        margin-right: 10px;
+    }
+}

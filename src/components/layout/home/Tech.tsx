@@ -34,8 +34,8 @@ export default function TechComponent() {
                                                 key={i}
                                                 src={`${lang.icon}`}
                                                 alt={`${lang.name} logo`}
-                                                width={'50'}
-                                                height={'50'}
+                                                width={'35'}
+                                                height={'35'}
                                             />
                                             {lang.name}
                                         </div>
@@ -53,8 +53,8 @@ export default function TechComponent() {
                                                 key={i}
                                                 src={`${lang.icon}`}
                                                 alt={`${lang.name} logo`}
-                                                width={'50'}
-                                                height={'50'}
+                                                width={'35'}
+                                                height={'35'}
                                             />
                                             {lang.name}
                                         </div>

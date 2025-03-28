@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import ProjectsComponent from '@/components/layout/home/Projects'
-import PaletteComponent from '@/components/layout/home/Palette'
 import MediaComponent from '@/components/layout/home/Media'
 import TechComponent from '@/components/layout/home/Tech'
 import Footer from '@/components/layout/global/Footer'
@@ -32,8 +31,6 @@ export default function Home() {
             <TechComponent />
             <hr />
             <ProjectsComponent />
-            <hr />
-            <PaletteComponent />
             <hr />
             <MediaComponent />
             <Footer />

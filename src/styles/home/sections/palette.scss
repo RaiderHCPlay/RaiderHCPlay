@@ -1,0 +1,30 @@
+@use '../../global/mixins';
+
+.palette-content {
+    @include mixins.flex();
+
+    .palette-color {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+    }
+
+    table {
+        width: 100%;
+        text-align: left;
+    }
+
+    td {
+        font-size: 25px;
+    }
+
+    tr {
+        padding-left: 50px;
+
+        background-color: #5b141a;
+    }
+
+    tr:nth-child(even) {
+        background-color: #a32f20;
+    }
+}

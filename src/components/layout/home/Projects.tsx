@@ -22,7 +22,7 @@ export default function ProjectsComponent() {
     return (
         <>
             {projects && projects.length > 0 && (
-                <div className={'projects-wrapper'}>
+                <div>
                     <h2>Projects</h2>
                     <div className={'projects-content'}>
                         {projects.map((project, i) => (
@@ -55,10 +55,11 @@ export default function ProjectsComponent() {
                                 </div>
                                 <div className={'right-content'}>
                                     <Image
-                                        src={project.badge}
+                                        src={`${project.badge}?style=flat&color=f27a23`}
                                         alt={`${project.name} wakatime badge`}
-                                        width={'130'}
-                                        height={'20'}
+                                        style={{ background: 'none' }}
+                                        width={'85'}
+                                        height={'15'}
                                     />
                                 </div>
                             </div>

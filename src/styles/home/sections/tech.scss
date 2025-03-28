@@ -9,7 +9,8 @@ h2 {
     @include mixins.flex(flex-start, space-evenly);
 }
 
-.languages {
+.languages,
+.frameworks {
     @include mixins.flex(flex-start, center, column);
 }
 
