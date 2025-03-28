@@ -10,6 +10,11 @@
         "category": "framework"
     },
     {
+        "name": "Vite",
+        "icon": "https://cdn.simpleicons.org/vite/feec4c",
+        "category": "framework"
+    },
+    {
         "name": "Next.js",
         "icon": "https://cdn.simpleicons.org/next.js/1c0000",
         "category": "framework"

@@ -22,10 +22,10 @@ export default function Home() {
             <hr />
             <div className={'about-content'}>
                 <h2>Something about me</h2>
-                Hi! I&apos;m Paweł, also known as RaiderHCPlay. I&apos;m a web developer.
-                I love TypeScript and I&apos;m learning Rust. In free time I love
-                reading mangas, watching anime, playing games and listening to
-                Persona 3 Reload OST.
+                Hi! I&apos;m Paweł, also known as RaiderHCPlay. I&apos;m a web
+                developer. I love TypeScript and I&apos;m learning Rust. In free
+                time I love reading mangas, watching anime, playing games and
+                listening to Persona 3 Reload OST.
             </div>
             <hr />
             <TechComponent />
