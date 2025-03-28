@@ -1,0 +1,22 @@
+@use '../../global/mixins';
+@use '../../global/globals';
+
+h2 {
+    text-align: center;
+}
+
+.tech-content {
+    @include mixins.flex(flex-start, space-evenly);
+}
+
+.languages {
+    @include mixins.flex(flex-start, center, column);
+}
+
+.lang {
+    @include mixins.flex(center, center);
+    margin: 5px 0 5px 0;
+    img {
+        margin-right: 10px;
+    }
+}

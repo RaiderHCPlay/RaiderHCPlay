@@ -1,17 +1,5 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import '@/styles/global/globals.scss'
-import Footer from '@/components/layout/global/Footer'
-
-const geistSans = Geist({
-    variable: '--font-geist-sans',
-    subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
-    subsets: ['latin'],
-})
+import '@/styles/main.scss'
 
 export const metadata: Metadata = {
     title: 'RaiderHCPlay',
@@ -27,10 +15,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable}`}>
-                {children}
-                <Footer />
-            </body>
+            <body className={'smooth-scroll'}>{children}</body>
         </html>
     )
 }

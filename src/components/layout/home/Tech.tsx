@@ -22,20 +22,47 @@ export default function TechComponent() {
         <>
             {tech && (
                 <div>
-                    {tech.map((lang: Icons, i: number) => {
-                        return (
-                            <div className={'lang'} key={i}>
-                                <Image
-                                    key={i}
-                                    src={`${lang.icon}`}
-                                    alt={`${lang.name} logo`}
-                                    width={'50'}
-                                    height={'50'}
-                                />
-                                {lang.name}
-                            </div>
-                        )
-                    })}
+                    <h2>Technology</h2>
+                    <div className={'tech-content'}>
+                        <div className={'languages'}>
+                            <h3>Languages</h3>
+                            {tech.map((lang: Icons, i: number) => {
+                                if (lang.category === 'language') {
+                                    return (
+                                        <div className={'lang'} key={i}>
+                                            <Image
+                                                key={i}
+                                                src={`${lang.icon}`}
+                                                alt={`${lang.name} logo`}
+                                                width={'50'}
+                                                height={'50'}
+                                            />
+                                            {lang.name}
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </div>
+                        <div className={'frameworks'}>
+                            <h3>Frameworks</h3>
+                            {tech.map((lang: Icons, i: number) => {
+                                if (lang.category === 'framework') {
+                                    return (
+                                        <div className={'lang'} key={i}>
+                                            <Image
+                                                key={i}
+                                                src={`${lang.icon}`}
+                                                alt={`${lang.name} logo`}
+                                                width={'50'}
+                                                height={'50'}
+                                            />
+                                            {lang.name}
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </div>
+                    </div>
                 </div>
             )}
         </>

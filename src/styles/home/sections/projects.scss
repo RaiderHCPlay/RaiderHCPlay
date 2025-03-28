@@ -1,0 +1,22 @@
+@use '../../global/mixins';
+@use '../../global/globals';
+
+.projects-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.project {
+    background-color: var(--surface1);
+    border: var(--orange) 2px solid;
+    border-radius: 12px;
+
+    a {
+        color: var(--purple);
+        text-decoration: none;
+        &:hover {
+            color: var(--yellow);
+        }
+    }
+}

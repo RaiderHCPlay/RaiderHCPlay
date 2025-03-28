@@ -14,4 +14,5 @@ interface Projects {
 interface Icons {
     name: string
     icon: string
+    category?: string
 }

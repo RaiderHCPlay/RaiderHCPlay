@@ -3,6 +3,7 @@ import ProjectsComponent from '@/components/layout/home/Projects'
 import PaletteComponent from '@/components/layout/home/Palette'
 import MediaComponent from '@/components/layout/home/Media'
 import TechComponent from '@/components/layout/home/Tech'
+import Footer from '@/components/layout/global/Footer'
 
 export default function Home() {
     return (
@@ -21,6 +22,7 @@ export default function Home() {
             </div>
             <hr />
             <div className={'about-content'}>
+                <h2>Something about me</h2>
                 Hi! I'm Paweł, also known as RaiderHCPlay. I'm a web developer.
                 I love TypeScript and I'm learning Rust. In free time I love
                 reading mangas, watching anime, playing games and listening to
@@ -34,6 +36,7 @@ export default function Home() {
             <PaletteComponent />
             <hr />
             <MediaComponent />
+            <Footer />
         </div>
     )
 }
