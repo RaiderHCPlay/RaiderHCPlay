@@ -16,3 +16,9 @@ interface Icons {
     icon: string
     category?: string
 }
+
+interface Media {
+    url: string
+    icon: string
+    name: string
+}

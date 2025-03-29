@@ -1,9 +1,11 @@
 import icons from '../public/icons.json'
 import projects from '../public/projects.json'
+import media from '../public/media.json'
 import { writeFile } from 'fs'
 
 let projectsArray: string[] = []
 let iconsArray: string[] = []
+let mediaArray: string[] = []
 
 projects.map((project) => {
     let subs: string[] = []
@@ -21,6 +23,12 @@ icons.map((icon) => {
     iconsArray.push(
         `<img src="${icon.icon}" alt="${icon.name}" width="40" height="40">`
     )
+})
+
+media.map(media => {
+	mediaArray.push(
+		`<a href="${media.url}"><img="${media.icon}" alt="${media.name} logo" width="40" height="40"></a>`
+	)
 })
 
 writeFile(
@@ -45,7 +53,7 @@ ${iconsArray.join(' ')}
 ***
 ### Media
 
-<a href="https://discord.com/users/483660439633395724"><img src="https://cdn.simpleicons.org/discord/cba6f7" alt="Discord logo" width="40" height="40"></a>
+${mediaArray.join(' ')}
 	`,
     (err) => {
         if (err) console.log(err)
