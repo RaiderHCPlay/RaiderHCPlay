@@ -33,7 +33,7 @@ jobs:
                   title: "docs(readme): generated `README.md` file"
                   body: |
                     Generated `README.md` file
-                  author: github_actions
+                  author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
                   reviewers: RaiderHCPlay
                   commit-message: 'docs(readme): generated `README.md` file'
                   delete-branch: true
