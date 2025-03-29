@@ -39,4 +39,3 @@ jobs:
                   delete-brach: true
                   draft: false
                   branch: 'docs/${{ github.sha }}'
-
