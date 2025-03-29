@@ -16,7 +16,7 @@ export default function TechComponent() {
 
     useEffect(() => {
         fetchTech()
-    }, [])
+    }, [fetchTech])
 
     return (
         <>

@@ -17,7 +17,7 @@ export default function ProjectsComponent() {
 
     useEffect(() => {
         getProjects()
-    }, [])
+    }, [getProjects])
 
     return (
         <>

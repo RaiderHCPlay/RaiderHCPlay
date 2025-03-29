@@ -15,6 +15,10 @@ export default function MediaComponent() {
         })
     }, [])
 
+    useEffect(() => {
+	getMedia()
+    }, [getMedia])
+
     return (
         <>
             {media && (
