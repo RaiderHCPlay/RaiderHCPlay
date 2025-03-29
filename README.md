@@ -10,7 +10,6 @@ Hi! I'm RaiderHCPlay, a web developer.
 ### Tech Stack
 
 <img src="https://cdn.simpleicons.org/typescript/a2b7e2" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react/a2b7e2" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/vite/feec4c" alt="Vite" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js/1c0001" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass/ea578b" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/less/483c90" alt="Less" width="40" height="40">
-***
 
 <details>
   <summary><b>Wakatime stats</b></summary>
