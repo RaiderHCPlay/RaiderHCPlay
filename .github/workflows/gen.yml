@@ -36,6 +36,6 @@ jobs:
                   author: github_actions
                   reviewers: RaiderHCPlay
                   commit-message: 'docs(readme): generated `README.md` file'
-                  delete-brach: true
+                  delete-branch: true
                   draft: false
                   branch: 'docs/${{ github.sha }}'
