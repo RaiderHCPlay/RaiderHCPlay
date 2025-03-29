@@ -27,7 +27,7 @@ icons.map((icon) => {
 
 media.map(media => {
 	mediaArray.push(
-		`<a href="${media.url}"><img="${media.icon}" alt="${media.name} logo" width="40" height="40"></a>`
+		`<a href="${media.url}"><img src="${media.icon}" alt="${media.name} logo" width="40" height="40"></a>`
 	)
 })
 
