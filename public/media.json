@@ -1,0 +1,20 @@
+[
+    {
+        "url": "https://discord.com/users/483660439633395724",
+        "icon": "https://cdn.simpleicons.org/discord/c9a917",
+        "name": "Discord",
+	"color": "base"
+    },
+    {
+        "url": "https://github.com/RaiderHCPlay",
+        "icon": "https://cdn.simpleicons.org/github/c9a917",
+        "name": "GitHub",
+	"color": "yellow"
+    },
+    {
+        "url": "https://wakatime.com/@RaiderHCPlay",
+        "icon": "https://cdn.simpleicons.org/wakatime/c9a917",
+        "name": "Wakatime",
+	"color": "yellow"
+    }
+]

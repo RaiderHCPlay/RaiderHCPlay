@@ -1,0 +1,40 @@
+@use '../global/mixins';
+@use '../global/globals';
+@use 'sections/media';
+@use 'sections/palette';
+@use 'sections/projects';
+@use 'sections/tech';
+
+footer {
+    text-align: center;
+}
+
+.home-wrapper {
+    min-width: 300px;
+    width: 55%;
+    margin: 2% auto 0 auto;
+}
+
+.top-content {
+    @include mixins.flex(center, center);
+    img {
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
+hr {
+    border-color: var(--yellow);
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.about-content {
+    text-align: center;
+    padding: 1.5rem;
+    h2 {
+        margin-bottom: 10px;
+    }
+}

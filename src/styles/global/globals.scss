@@ -1,0 +1,31 @@
+//imports
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+// global styling
+
+:root {
+    color: var(--text);
+    background-color: var(--base);
+    font-family: 'Ubuntu', sans-serif;
+    transition:
+        background 0.5s,
+        color 0.5s;
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    transition:
+        background 0.4s,
+        color 0.4s;
+}
+
+// not found styling
+
+.not-found {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

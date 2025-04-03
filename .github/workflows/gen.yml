@@ -1,0 +1,41 @@
+name: Generate README
+on:
+    push:
+        branches:
+            - 'main'
+permissions:
+    contents: write
+    pull-requests: write
+
+jobs:
+    generate:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  version: 9
+                  run_install: false
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '23.x'
+                  cache: 'pnpm'
+            - name: Install dependencies
+              run: pnpm install
+            - name: Generate README
+              run: pnpm generate:readme
+            - name: Create Pull Request
+              uses: peter-evans/create-pull-request@v7
+              with:
+                  title: 'docs(readme): generated `README.md` file'
+                  body: |
+                      Generated `README.md` file
+                  author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+                  reviewers: RaiderHCPlay
+                  commit-message: 'docs(readme): generated `README.md` file'
+                  delete-branch: true
+                  draft: false
+                  branch: 'docs/${{ github.sha }}'

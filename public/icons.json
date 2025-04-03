@@ -1,0 +1,32 @@
+[
+    {
+        "name": "TypeScript",
+        "icon": "https://cdn.simpleicons.org/typescript/849acd",
+        "category": "language"
+    },
+    {
+        "name": "React",
+        "icon": "https://cdn.simpleicons.org/react/849acd",
+        "category": "framework"
+    },
+    {
+        "name": "Vite",
+        "icon": "https://cdn.simpleicons.org/vite/c9a917",
+        "category": "framework"
+    },
+    {
+        "name": "Next.js",
+        "icon": "https://cdn.simpleicons.org/next.js/aec8c9",
+        "category": "framework"
+    },
+    {
+        "name": "Sass",
+        "icon": "https://cdn.simpleicons.org/sass/d1486e",
+        "category": "language"
+    },
+    {
+        "name": "Less",
+        "icon": "https://cdn.simpleicons.org/less/3b3078",
+        "category": "language"
+    }
+]
