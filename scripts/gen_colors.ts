@@ -32,14 +32,3 @@ writeFile(
   },
 );
 
-// media write
-
-let mediaArray: object[] = [];
-
-mediaData.map((media) => {
-  const color = "cd";
-  const newIcon = media.icon.replace("/([0-9a-fA-F]{6}).$/", color);
-  mediaArray.push({ ...media, icon: newIcon });
-});
-
-console.log(mediaArray);
