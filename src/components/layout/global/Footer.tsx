@@ -1,17 +1,17 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 
 export default function Footer() {
-    const [year, setYear] = useState<number | undefined>()
+  const [year, setYear] = useState<number | undefined>();
 
-    useEffect(() => {
-        setYear(new Date().getFullYear())
-    }, [])
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
 
-    return (
-        <div className={'footer-container'}>
-            <footer>© {year} RaiderHCPlay</footer>
-        </div>
-    )
+  return (
+    <div className={"footer-container"}>
+      <footer>© {year} RaiderHCPlay</footer>
+    </div>
+  );
 }

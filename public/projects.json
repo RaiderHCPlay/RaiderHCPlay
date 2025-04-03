@@ -1,20 +1,20 @@
 [
-    {
-        "name": "RaiderHCPlay/RaiderHCPlay",
-        "description": "My repo for github profile and website",
-        "github": "https://github.com/RaiderHCPlay/RaiderHCPlay",
-        "badge": "https://wakatime.com/badge/user/16a607a2-a819-4ae5-b4fd-490342b99c3d/project/a43d72eb-a3d7-435d-a196-632e5bbb2516.svg"
-    },
-    {
-        "name": "catppuccin/userstyles",
-        "description": "Catppuccin userstyles, currently maintainer of",
-        "github": "https://github.com/catppuccin/userstyles",
-        "badge": "https://wakatime.com/badge/user/16a607a2-a819-4ae5-b4fd-490342b99c3d/project/408f458f-9a85-4c09-9515-ce79383a0559.svg",
-        "sublinks": [
-            {
-                "name": "React.dev",
-                "url": "https://github.com/catppuccin/userstyles/tree/main/styles/react.dev"
-            }
-        ]
-    }
+  {
+    "name": "RaiderHCPlay/RaiderHCPlay",
+    "description": "My repo for github profile and website",
+    "github": "https://github.com/RaiderHCPlay/RaiderHCPlay",
+    "badge": "https://wakatime.com/badge/user/16a607a2-a819-4ae5-b4fd-490342b99c3d/project/a43d72eb-a3d7-435d-a196-632e5bbb2516.svg"
+  },
+  {
+    "name": "catppuccin/userstyles",
+    "description": "Catppuccin userstyles, currently maintainer of",
+    "github": "https://github.com/catppuccin/userstyles",
+    "badge": "https://wakatime.com/badge/user/16a607a2-a819-4ae5-b4fd-490342b99c3d/project/408f458f-9a85-4c09-9515-ce79383a0559.svg",
+    "sublinks": [
+      {
+        "name": "React.dev",
+        "url": "https://github.com/catppuccin/userstyles/tree/main/styles/react.dev"
+      }
+    ]
+  }
 ]

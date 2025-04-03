@@ -1,58 +1,58 @@
-@use '../../global/mixins';
-@use '../../global/globals';
+@use "../../global/mixins";
+@use "../../global/globals";
 
 .projects-wrapper {
-    h2 {
-        margin-bottom: 1rem;
-        padding-left: 1.5rem;
-        @media only screen and (max-width: 700px) {
-          padding-left: 0;
-        }
+  h2 {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    @media only screen and (max-width: 700px) {
+      padding-left: 0;
     }
+  }
 }
 
 .projects-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
 }
 
 .project {
-    background-color: var(--crust);
-    border: 2px solid var(--yellow);
-    border-radius: 12px;
-    aspect-ratio: auto;
-    padding: 0.75rem 15px;
-    margin: 0;
-    min-height: 120px;
-    @include mixins.flex(center, space-between, column);
+  background-color: var(--crust);
+  border: 2px solid var(--orange);
+  border-radius: 12px;
+  aspect-ratio: auto;
+  padding: 0.75rem 15px;
+  margin: 0;
+  min-height: 120px;
+  @include mixins.flex(center, space-between, column);
 
-    img {
-        max-width: 100%;
-        height: auto;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    color: var(--orange);
+    font-size: clamp(12px, 3vw, 20px);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--yellow);
     }
+  }
 
+  article {
+    font-size: clamp(13px, 2vw, 16px);
     a {
-        color: var(--yellow);
-        font-size: clamp(12px, 3vw, 20px);
-        text-decoration: none;
-
-        &:hover {
-            color: var(--orange);
-        }
+      font-size: clamp(13px, 2vw, 16px);
     }
+  }
 
-    article {
-        font-size: clamp(13px, 2vw, 16px);
-        a {
-            font-size: clamp(13px, 2vw, 16px);
-        }
-    }
-
-    .project-top-content {
-        @include mixins.flex(flex-start, space-evenly, column);
-        height: 70%;
-        width: 100%;
-        margin-left: 2%;
-    }
+  .project-top-content {
+    @include mixins.flex(flex-start, space-evenly, column);
+    height: 70%;
+    width: 100%;
+    margin-left: 2%;
+  }
 }

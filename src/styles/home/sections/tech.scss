@@ -1,35 +1,34 @@
-@use '../../global/mixins';
-@use '../../global/globals';
-
-
+@use "../../global/mixins";
+@use "../../global/globals";
 
 .tech-wrapper {
-    margin: 1.5rem;
-    h2 {
-        margin-bottom: 10px;
-    }
+  margin: 1.5rem;
+  h2 {
+    margin-bottom: 10px;
+  }
 }
 
 .tech-content {
-    @include mixins.flex(flex-start, flex-start);
-    @media only screen and (max-width: 700px) {
-      justify-content: space-around;
-      .languages, .frameworks {
-        margin-right: 0;
-      }
+  @include mixins.flex(flex-start, flex-start);
+  @media only screen and (max-width: 700px) {
+    justify-content: space-around;
+    .languages,
+    .frameworks {
+      margin-right: 0;
     }
+  }
 }
 
 .languages,
 .frameworks {
-    @include mixins.flex(flex-start, center, column);
-    margin-right: 5rem;
+  @include mixins.flex(flex-start, center, column);
+  margin-right: 5rem;
 }
 
 .lang {
-    @include mixins.flex(center, center);
-    margin: 5px 0 5px 0;
-    img {
-        margin-right: 10px;
-    }
+  @include mixins.flex(center, center);
+  margin: 5px 0 5px 0;
+  img {
+    margin-right: 10px;
+  }
 }

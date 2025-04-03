@@ -1,25 +1,25 @@
 interface sublinks {
-    name: string
-    url: string
+  name: string;
+  url: string;
 }
 
 interface Projects {
-    name: string
-    description: string
-    github: string
-    badge: string
-    sublinks?: Array<sublinks>
+  name: string;
+  description: string;
+  github: string;
+  badge: string;
+  sublinks?: Array<sublinks>;
 }
 
 interface Icons {
-    name: string
-    icon: string
-    category?: string
+  name: string;
+  icon: string;
+  category?: string;
 }
 
 interface Media {
-    url: string
-    icon: string
-    name: string
-    color: string
+  url: string;
+  xmlns: string;
+  path: string;
+  name: string;
 }

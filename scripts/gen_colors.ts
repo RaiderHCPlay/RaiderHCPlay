@@ -1,11 +1,11 @@
-import palette from '../palette/palette-data.json'
-import mediaData from '../public/media.json'
-import { writeFile } from 'fs'
+import palette from "../palette/palette-data.json";
+import mediaData from "../public/media.json";
+import { writeFile } from "fs";
 
 // scss palette write
 writeFile(
-    '../palette/palette.scss',
-    `
+  "../palette/palette.scss",
+  `
 	:root {
 	    --base: #${palette.base};
     	    --pink: #${palette.pink};
@@ -27,21 +27,19 @@ writeFile(
     	    --black: #${palette.black};
 	}
 `,
-    (err) => {
-        return err
-    }
-)
+  (err) => {
+    return err;
+  },
+);
 
 // media write
 
-let mediaArray: object[] = []
+let mediaArray: object[] = [];
 
-mediaData.map(media => {
-	const color = 'cd'
-	const newIcon = media.icon.replace('/([0-9a-fA-F]{6}).$/', color)
-	mediaArray.push({ ...media, icon: newIcon })	
-})
+mediaData.map((media) => {
+  const color = "cd";
+  const newIcon = media.icon.replace("/([0-9a-fA-F]{6}).$/", color);
+  mediaArray.push({ ...media, icon: newIcon });
+});
 
-console.log(mediaArray)
-
-
+console.log(mediaArray);
