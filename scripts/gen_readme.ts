@@ -44,6 +44,12 @@ ${projectsArray.join('\n\n')}
 
 ${iconsArray.join(' ')}
 ***
+
+<details>
+	<summary><b>Wakatime stats</b></summary>
+	<a href="https://wakatime.com/@RaiderHCPlay"><img src="https://wakatime.com/share/@RaiderHCPlay/adf53bfd-d925-41d8-b6d5-9189284b7615.png" /></a>
+</details>
+
 ### Media
 
 ${mediaArray.join(' ')}
