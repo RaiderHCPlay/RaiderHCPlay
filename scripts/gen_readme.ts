@@ -26,9 +26,9 @@ icons.map((icon) => {
 });
 
 media.map((media) => {
-  mediaArray.push(`<a href="${media.url}"><svg role="img" viewBox="0 0 24 24" xmlns=${media.xmlns}>
+  mediaArray.push(`<a href="${media.url}"><svg role="img" viewBox="0 0 24 24" xmlns="${media.xmlns}">
                 <title>${media.name}</title>
-                <path d=${media.path} />
+                <path d="${media.path}"/>
               </svg></a>`);
 });
 
