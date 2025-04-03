@@ -26,10 +26,9 @@ icons.map((icon) => {
 });
 
 media.map((media) => {
-  mediaArray.push(`<a href="${media.url}"><svg role="img" viewBox="0 0 24 24" xmlns="${media.xmlns}">
-                <title>${media.name}</title>
-                <path d="${media.path}"/>
-              </svg></a>`);
+  mediaArray.push(
+    `<a href="${media.url}"><img src="${media.icon}" alt="${media.name} logo" width="40" height="40"></a>`,
+  );
 });
 
 writeFile(
