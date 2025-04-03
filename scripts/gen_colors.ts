@@ -31,4 +31,3 @@ writeFile(
     return err;
   },
 );
-
