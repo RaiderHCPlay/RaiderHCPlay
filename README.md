@@ -16,7 +16,7 @@ Hi! I'm RaiderHCPlay, a web developer.
 	<summary><b>Wakatime stats</b></summary>
 	<a href="https://wakatime.com/@RaiderHCPlay"><img src="https://wakatime.com/share/@RaiderHCPlay/adf53bfd-d925-41d8-b6d5-9189284b7615.png" /></a>
 </details>
-
+***
 ### Media
 
 <a href="https://discord.com/users/483660439633395724"><img src="https://cdn.simpleicons.org/discord/c9a917" alt="Discord logo" width="40" height="40"></a> <a href="https://github.com/RaiderHCPlay"><img src="https://cdn.simpleicons.org/github/c9a917" alt="GitHub logo" width="40" height="40"></a> <a href="https://wakatime.com/@RaiderHCPlay"><img src="https://cdn.simpleicons.org/wakatime/c9a917" alt="Wakatime logo" width="40" height="40"></a>
