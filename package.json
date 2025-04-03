@@ -9,7 +9,7 @@
         "lint": "next lint",
         "format": "prettier --write .",
         "generate:readme": "tsx ./scripts/gen_readme.ts",
-	"generate:palette": "tsx ./scripts/gen_colors.ts"
+        "generate:palette": "tsx ./scripts/gen_colors.ts"
     },
     "dependencies": {
         "next": "15.2.4",
@@ -18,13 +18,13 @@
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3.3.1",
-        "@types/node": "^22.13.14",
-        "@types/react": "^19.0.12",
-        "@types/react-dom": "^19.0.4",
+        "@types/node": "^22.14.0",
+        "@types/react": "^19.1.0",
+        "@types/react-dom": "^19.1.1",
         "eslint": "^9.23.0",
         "eslint-config-next": "15.2.4",
         "prettier": "^3.5.3",
-        "sass": "^1.86.0",
+        "sass": "^1.86.2",
         "tsx": "^4.19.3",
         "typescript": "^5.8.2"
     }
