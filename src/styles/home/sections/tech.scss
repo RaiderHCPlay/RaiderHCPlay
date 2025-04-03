@@ -1,9 +1,7 @@
 @use '../../global/mixins';
 @use '../../global/globals';
 
-h2 {
-    text-align: center;
-}
+
 
 .tech-wrapper {
     margin: 1.5rem;
@@ -13,12 +11,19 @@ h2 {
 }
 
 .tech-content {
-    @include mixins.flex(flex-start, space-evenly);
+    @include mixins.flex(flex-start, flex-start);
+    @media only screen and (max-width: 700px) {
+      justify-content: space-around;
+      .languages, .frameworks {
+        margin-right: 0;
+      }
+    }
 }
 
 .languages,
 .frameworks {
     @include mixins.flex(flex-start, center, column);
+    margin-right: 5rem;
 }
 
 .lang {
