@@ -24,7 +24,7 @@ export default function MediaComponent() {
         <div className={"media-content"}>
           {media.map((media, i) => (
             <Link target={"_blank"} key={i} href={`${media.url}`}>
-              <svg role="img" viewBox="0 0 24 24" xmlns={media.xmlns}>
+              <svg role="img" viewBox="0 0 24 24" width="40" height="40" xmlns={media.xmlns}>
                 <title>{media.name}</title>
                 <path d={`${media.path}`} />
               </svg>

@@ -19,7 +19,7 @@
 
 .project {
   background-color: var(--crust);
-  border: 2px solid var(--orange);
+  border: 2px solid var(--purple);
   border-radius: 12px;
   aspect-ratio: auto;
   padding: 0.75rem 15px;
@@ -33,12 +33,13 @@
   }
 
   a {
-    color: var(--orange);
+    color: var(--purple);
     font-size: clamp(12px, 3vw, 20px);
     text-decoration: none;
 
     &:hover {
-      color: var(--yellow);
+      color: var(--surface2);
+      text-decoration: underline;
     }
   }
 
