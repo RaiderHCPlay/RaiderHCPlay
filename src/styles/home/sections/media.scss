@@ -1,10 +1,15 @@
-@use '../../global/mixins';
+@use "../../global/mixins";
 
 .media-content {
-    @include mixins.flex();
-    margin-bottom: 10px;
-    margin-top: 1.5rem;
-    a {
-        margin-right: 10px;
+  @include mixins.flex();
+  margin-bottom: 10px;
+  margin-top: 1.5rem;
+  a {
+    width: 50px; 
+    fill: var(--purple);
+    transition: fill 0.5s;
+    &:hover {
+      fill: var(--surface2);
     }
+  }
 }
