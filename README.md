@@ -9,7 +9,7 @@ Hi! I'm RaiderHCPlay, a web developer.
 ***
 ### Tech Stack
 
-<img src="https://cdn.simpleicons.org/typescript/849acd" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react/849acd" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/vite/c9a917" alt="Vite" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js/aec8c9" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass/d1486e" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/less/3b3078" alt="Less" width="40" height="40">
+<img src="https://cdn.simpleicons.org/typescript/5376f5" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react/5376f5" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/vite/ffe26f" alt="Vite" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js/9beeff" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass/ff6fa3" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/less/7bbdff" alt="Less" width="40" height="40">
 ***
 
 <details>
@@ -17,7 +17,8 @@ Hi! I'm RaiderHCPlay, a web developer.
 	<a href="https://wakatime.com/@RaiderHCPlay"><img src="https://wakatime.com/share/@RaiderHCPlay/adf53bfd-d925-41d8-b6d5-9189284b7615.png" /></a>
 </details>
 
+***
 ### Media
 
-<a href="https://discord.com/users/483660439633395724"><img src="https://cdn.simpleicons.org/discord/d1632d" alt="Discord logo" width="40" height="40"></a> <a href="https://github.com/RaiderHCPlay"><img src="https://cdn.simpleicons.org/github/d1632d" alt="GitHub logo" width="40" height="40"></a> <a href="https://wakatime.com/@RaiderHCPlay"><img src="https://cdn.simpleicons.org/wakatime/d1632d" alt="Wakatime logo" width="40" height="40"></a>
-
+<a href="https://discord.com/users/483660439633395724"><img src="https://cdn.simpleicons.org/discord/c77dff" alt="Discord logo" width="40" height="40"></a> <a href="https://github.com/RaiderHCPlay"><img src="https://cdn.simpleicons.org/github/c77dff" alt="GitHub logo" width="40" height="40"></a> <a href="https://wakatime.com/@RaiderHCPlay"><img src="https://cdn.simpleicons.org/wakatime/c77dff" alt="Wakatime logo" width="40" height="40"></a>
+	
