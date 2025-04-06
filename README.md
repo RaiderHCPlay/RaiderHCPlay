@@ -20,5 +20,5 @@ Hi! I'm RaiderHCPlay, a web developer.
 ***
 ### Media
 
-<a href="https://discord.com/users/483660439633395724"><img src="https://cdn.simpleicons.org/discord/c77dff" alt="Discord logo" width="40" height="40"></a> <a href="https://github.com/RaiderHCPlay"><img src="https://cdn.simpleicons.org/github/c77dff" alt="GitHub logo" width="40" height="40"></a> <a href="https://wakatime.com/@RaiderHCPlay"><img src="https://cdn.simpleicons.org/wakatime/c77dff" alt="Wakatime logo" width="40" height="40"></a>
+<a href="https://discord.com/users/483660439633395724"><img src="https://cdn.simpleicons.org/discord/ff6fa3" alt="Discord logo" width="40" height="40"></a> <a href="https://github.com/RaiderHCPlay"><img src="https://cdn.simpleicons.org/github/ff6fa3" alt="GitHub logo" width="40" height="40"></a> <a href="https://wakatime.com/@RaiderHCPlay"><img src="https://cdn.simpleicons.org/wakatime/ff6fa3" alt="Wakatime logo" width="40" height="40"></a>
 	
