@@ -9,7 +9,7 @@ Hi! I'm RaiderHCPlay, a web developer.
 ***
 ### Tech Stack
 
-<img src="https://cdn.simpleicons.org/typescript/7bbdff" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react/7bbdff" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/vite/ffe26f" alt="Vite" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js/9beeff" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass/ff6fa3" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/less/ff326f" alt="Less" width="40" height="40">
+<img src="https://cdn.simpleicons.org/typescript/7bbdff" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react/7bbdff" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/vite/ffe26f" alt="Vite" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js/9beeff" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass/ff6fa3" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/less/7bbdff" alt="Less" width="40" height="40">
 ***
 
 <details>
