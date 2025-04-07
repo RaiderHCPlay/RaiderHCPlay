@@ -1,12 +1,12 @@
 [
   {
     "name": "TypeScript",
-    "icon": "https://cdn.simpleicons.org/typescript/5376f5",
+    "icon": "https://cdn.simpleicons.org/typescript/7bbdff",
     "category": "language"
   },
   {
     "name": "React",
-    "icon": "https://cdn.simpleicons.org/react/5376f5",
+    "icon": "https://cdn.simpleicons.org/react/7bbdff",
     "category": "framework"
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "name": "Less",
-    "icon": "https://cdn.simpleicons.org/less/7bbdff",
+    "icon": "https://cdn.simpleicons.org/less/5376f5",
     "category": "language"
   }
 ]
