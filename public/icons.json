@@ -1,32 +1,32 @@
 [
   {
     "name": "TypeScript",
-    "icon": "https://cdn.simpleicons.org/typescript/7bbdff",
+    "icon": "https://cdn.simpleicons.org/typescript/6aa3e6",
     "category": "language"
   },
   {
     "name": "React",
-    "icon": "https://cdn.simpleicons.org/react/7bbdff",
+    "icon": "https://cdn.simpleicons.org/react/4e6cd4",
     "category": "framework"
   },
   {
     "name": "Vite",
-    "icon": "https://cdn.simpleicons.org/vite/ffe26f",
+    "icon": "https://cdn.simpleicons.org/vite/e6cc68",
     "category": "framework"
   },
   {
     "name": "Next.js",
-    "icon": "https://cdn.simpleicons.org/next.js/9beeff",
+    "icon": "https://cdn.simpleicons.org/next.js/86c9d4",
     "category": "framework"
   },
   {
     "name": "Sass",
-    "icon": "https://cdn.simpleicons.org/sass/ff6fa3",
+    "icon": "https://cdn.simpleicons.org/sass/e85f92",
     "category": "language"
   },
   {
     "name": "Less",
-    "icon": "https://cdn.simpleicons.org/less/7bbdff",
+    "icon": "https://cdn.simpleicons.org/less/4e6cd4",
     "category": "language"
   }
 ]
