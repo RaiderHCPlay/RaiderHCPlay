@@ -9,7 +9,7 @@ Hi! I'm RaiderHCPlay, a web developer.
 ***
 ### Tech Stack
 
-<img src="https://cdn.simpleicons.org/typescript/7bbdff" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react/7bbdff" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/vite/ffe26f" alt="Vite" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js/9beeff" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass/ff6fa3" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/less/7bbdff" alt="Less" width="40" height="40">
+<img src="https://cdn.simpleicons.org/typescript/6aa3e6" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react/6aa3e6" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/vite/e6cc68" alt="Vite" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js/86c9d4" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass/e85f92" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/less/4e6cd4" alt="Less" width="40" height="40">
 ***
 
 <details>
@@ -20,5 +20,5 @@ Hi! I'm RaiderHCPlay, a web developer.
 ***
 ### Media
 
-<a href="https://discord.com/users/483660439633395724"><img src="https://cdn.simpleicons.org/discord/ff6fa3" alt="Discord logo" width="40" height="40"></a> <a href="https://github.com/RaiderHCPlay"><img src="https://cdn.simpleicons.org/github/ff6fa3" alt="GitHub logo" width="40" height="40"></a> <a href="https://wakatime.com/@RaiderHCPlay"><img src="https://cdn.simpleicons.org/wakatime/ff6fa3" alt="Wakatime logo" width="40" height="40"></a>
+<a href="https://discord.com/users/483660439633395724"><img src="https://cdn.simpleicons.org/discord/b478e0" alt="Discord logo" width="40" height="40"></a> <a href="https://github.com/RaiderHCPlay"><img src="https://cdn.simpleicons.org/github/b478e0" alt="GitHub logo" width="40" height="40"></a> <a href="https://wakatime.com/@RaiderHCPlay"><img src="https://cdn.simpleicons.org/wakatime/b478e0" alt="Wakatime logo" width="40" height="40"></a>
 	
