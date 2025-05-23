@@ -23,17 +23,47 @@ h2 {
 }
 
 .top-content {
-  @include mixins.flex(center, flex-start);
+  @include mixins.flex(flex-start, center, column);
   padding-left: 1.5rem;
+
+  .avatar-name {
+    @include mixins.flex(center, flex-start);
+
+    img {
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+  }
+  .spotify-div {
+    display: flex;
+    color: var(--text);
+    font-size: clamp(12px, 2vw, 16px);
+    text-decoration-line: none;
+    margin-top: 10px;
+    text-align: start;
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .spotify-content {
+      margin-left: 15px;
+      @media only screen and (max-width: 700px) {
+        margin-top: 10px;
+      }
+    }
+  }
 
   @media only screen and (max-width: 700px) {
     padding-left: 0;
-    justify-content: center;
+    align-items: center;
   }
-  img {
-    margin-right: 10px;
-    border-radius: 50%;
-  }
+
   h2 {
     margin-bottom: 0;
   }

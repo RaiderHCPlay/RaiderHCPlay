@@ -41,3 +41,24 @@ interface WakatimeData {
 interface WakatimeLangs {
   data: WakatimeData[];
 }
+
+interface Artists {
+  external_urls: {
+    spotify: string;
+  };
+  href: string;
+  id: string;
+  name: string;
+  type: string;
+  uri: string;
+}
+
+interface SpotifyData {
+  error?: string;
+  isPlaying: boolean;
+  title: string;
+  artist: string;
+  album: string;
+  albumImageUrl: string;
+  trackUrl: string;
+}
