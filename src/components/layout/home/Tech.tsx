@@ -16,7 +16,7 @@ export default function TechComponent() {
         setWakatime(await res.json());
       }
     });
-  }, [wakatime]);
+  }, []);
 
   useEffect(() => {
     fetch("/icons.json", {}).then(async (res) => {
@@ -24,7 +24,7 @@ export default function TechComponent() {
         setTech(await res.json());
       }
     });
-  }, [tech]);
+  }, []);
 
   return (
     <>
@@ -37,7 +37,8 @@ export default function TechComponent() {
               {tech.map((lang: Icons, i: number) => {
                 const wakLang = wakatime?.data.find(
                   (wakatimeLang) =>
-                    wakatimeLang.name.toLowerCase() === lang.wakatime_name.toLowerCase(),
+                    wakatimeLang.name.toLowerCase() ===
+                    lang.wakatime_name.toLowerCase(),
                 );
                 if (lang.category === "language") {
                   return (
