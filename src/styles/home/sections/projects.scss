@@ -34,18 +34,18 @@
 
   a {
     color: var(--purple);
-    font-size: clamp(12px, 3vw, 20px);
+    font-size: clamp(18px, 3vw, 20px);
     text-decoration: none;
 
     &:hover {
-      color: var(--overlay2); 
+      color: var(--overlay2);
     }
   }
 
   article {
-    font-size: clamp(13px, 2vw, 16px);
+    font-size: clamp(14px, 2vw, 16px);
     a {
-      font-size: clamp(13px, 2vw, 16px);
+      font-size: clamp(14px, 2vw, 16px);
     }
   }
 

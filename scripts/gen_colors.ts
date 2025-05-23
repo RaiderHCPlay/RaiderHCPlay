@@ -3,7 +3,8 @@ import { writeFile } from "fs";
 
 // scss palette write
 writeFile(
-  "./palette/palette.scss",`:root {
+  "./palette/palette.scss",
+  `:root {
 	--base: ${palette.base};
     	--pink: ${palette.pink};
     	--text: ${palette.text};
