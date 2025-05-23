@@ -45,14 +45,7 @@ export default function Top() {
           <div className="spotify-div">No currently played track</div>
         )}
         {spotify?.isPlaying && (
-          <Link href={spotify.trackUrl} className="spotify-div">
-            <Image
-              src={spotify.albumImageUrl}
-              alt={"Spotify Album Image"}
-              width={"50"}
-              height={"50"}
-              className=""
-            />
+          <Link href={spotify.trackUrl} className="spotify-div"> 
             <svg
               viewBox="0 0 24 24"
               width={"25px"}
@@ -79,6 +72,13 @@ export default function Top() {
               <h3>Now playing: {spotify.title}</h3>
               <h3>By: {spotify.artist}</h3>
             </div>
+						     <Image
+              src={spotify.albumImageUrl}
+              alt={"Spotify Album Image"}
+              width={"50"}
+              height={"50"}
+              className=""
+            />
           </Link>
         )}
       </div>
