@@ -12,13 +12,19 @@ export async function GET() {
   );
 
   if (result.status === 204) {
-    return NextResponse.json({ error: "No currently played track" }, { status: 200 });
+    return NextResponse.json(
+      { error: "No currently played track" },
+      { status: 200 },
+    );
   }
 
   const data = await result.json();
 
   if (!data || !data.item) {
-    return NextResponse.json({ error: "No currently played track" }, { status: 500 });
+    return NextResponse.json(
+      { error: "No currently played track" },
+      { status: 500 },
+    );
   }
 
   const track = data.item;

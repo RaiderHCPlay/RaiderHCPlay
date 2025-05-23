@@ -49,10 +49,16 @@ h2 {
         width: 60px;
         height: 60px;
       }
-    }
 
+      svg {
+        margin-top: 10px;
+      }
+    }
+    svg {
+      margin-left: 5px;
+    }
     .spotify-content {
-      margin-left: 15px;
+      margin-left: 2px;
       @media only screen and (max-width: 700px) {
         margin-top: 10px;
       }

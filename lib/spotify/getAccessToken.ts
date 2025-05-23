@@ -16,6 +16,5 @@ export default async function getAccessToken() {
   });
 
   const jsoned = await res.json();
-  return jsoned.access_token; 
-  
+  return jsoned.access_token;
 }
