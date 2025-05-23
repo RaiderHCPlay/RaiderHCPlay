@@ -14,6 +14,7 @@ interface Projects {
 interface Icons {
   name: string;
   icon: string;
+  wakatime_name: string;
   category?: string;
 }
 
@@ -23,4 +24,20 @@ interface Media {
   xmlns: string;
   path: string;
   name: string;
+}
+
+interface WakatimeData {
+  color: string;
+  decimal: string;
+  digital: string;
+  hours: number;
+  minutes: number;
+  name: string;
+  percent: number;
+  text: string;
+  total_seconds: number;
+}
+
+interface WakatimeLangs {
+  data: WakatimeData[];
 }

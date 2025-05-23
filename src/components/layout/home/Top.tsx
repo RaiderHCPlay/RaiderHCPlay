@@ -6,19 +6,19 @@ import { useState, useEffect } from "react";
 export default function Top() {
   const [spotify, setSpotify] = useState();
 
-  useEffect(() => {
-	window.location.href = "/api/spotify" 
-  }, []);
-
-  useEffect(() => {
-    fetch("/api/spotify/data")
-      .then((res) => res.json())
-      .then((data) => {
-        if (!data.error) {
-          setSpotify(data);
-        }
-      });
-  }, []);
+ //  useEffect(() => {
+	// window.location.href = "/api/spotify" 
+ //  }, []);
+	//
+ //  useEffect(() => {
+ //    fetch("/api/spotify/data")
+ //      .then((res) => res.json())
+ //      .then((data) => {
+ //        if (!data.error) {
+ //          setSpotify(data);
+ //        }
+ //      });
+ //  }, []);
 
   return (
     <>

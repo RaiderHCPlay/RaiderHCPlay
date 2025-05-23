@@ -1,31 +1,37 @@
 [
   {
     "name": "TypeScript",
+    "wakatime_name": "typescript",
     "icon": "https://cdn.simpleicons.org/typescript/6aa3e6",
     "category": "language"
   },
   {
     "name": "React",
+    "wakatime_name": "none",
     "icon": "https://cdn.simpleicons.org/react/4e6cd4",
     "category": "framework"
   },
   {
     "name": "Vite",
+    "wakatime_name": "none",
     "icon": "https://cdn.simpleicons.org/vite/e6cc68",
     "category": "framework"
   },
   {
     "name": "Next.js",
+    "wakatime_name": "none",
     "icon": "https://cdn.simpleicons.org/next.js/86c9d4",
     "category": "framework"
   },
   {
     "name": "Sass",
+    "wakatime_name": "scss",
     "icon": "https://cdn.simpleicons.org/sass/e85f92",
     "category": "language"
   },
   {
     "name": "Less",
+    "wakatime_name": "less",
     "icon": "https://cdn.simpleicons.org/less/4e6cd4",
     "category": "language"
   }
