@@ -45,7 +45,7 @@ export default function Top() {
           <div className="spotify-div">No currently played track</div>
         )}
         {spotify?.isPlaying && (
-          <Link href={spotify.trackUrl} className="spotify-div">
+          <Link href={spotify.trackUrl} target={"_blank"} className="spotify-div">
             <svg
               viewBox="0 0 24 24"
               width={"25px"}
