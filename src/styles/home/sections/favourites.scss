@@ -1,0 +1,31 @@
+.fav-section {
+  margin: 1.5rem;
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.fav-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  @media only screen and (max-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .fav-div {
+    h3 {
+      margin-bottom: 10px;
+    }
+    text-align: center;
+  }
+}

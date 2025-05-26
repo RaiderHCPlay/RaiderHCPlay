@@ -4,6 +4,8 @@ import TechComponent from "@/components/home/Tech";
 import Footer from "@/components/global/Footer";
 import Top from "@/components/home/Top";
 import AboutSection from "@/components/home/About";
+import FavouritesSection from "@/components/home/Favourites";
+import FunFactsSection from "@/components/home/FunFacts";
 
 export default function Home() {
   return (
@@ -15,6 +17,10 @@ export default function Home() {
       <TechComponent />
       <hr />
       <ProjectsComponent />
+      <hr />
+      <FavouritesSection />
+      <hr />
+      <FunFactsSection />
       <hr />
       <MediaComponent />
       <Footer />
