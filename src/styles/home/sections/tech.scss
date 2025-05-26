@@ -11,16 +11,22 @@
 .tech-content {
   @include mixins.flex(flex-start, flex-start);
   @media only screen and (max-width: 700px) {
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     .languages,
-    .frameworks {
+    .frameworks,
+    .exploring,
+    .setup {
       margin-right: 0;
     }
   }
 }
 
 .languages,
-.frameworks {
+.frameworks,
+.exploring,
+.setup {
   @include mixins.flex(flex-start, center, column);
   margin-right: 5rem;
 }

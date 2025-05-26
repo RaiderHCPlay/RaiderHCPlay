@@ -3,11 +3,14 @@ import MediaComponent from "@/components/home/Media";
 import TechComponent from "@/components/home/Tech";
 import Footer from "@/components/global/Footer";
 import Top from "@/components/home/Top";
+import AboutSection from "@/components/home/About";
 
 export default function Home() {
   return (
     <div className={"home-wrapper"}>
       <Top />
+      <hr />
+      <AboutSection />
       <hr />
       <TechComponent />
       <hr />

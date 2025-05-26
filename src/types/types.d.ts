@@ -14,7 +14,7 @@ interface Projects {
 interface Icons {
   name: string;
   icon: string;
-  wakatime_name: string;
+  wakatime_name?: string;
   category?: string;
 }
 

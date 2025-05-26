@@ -45,7 +45,11 @@ export default function Top() {
           <div className="spotify-div">No currently played track</div>
         )}
         {spotify?.isPlaying && (
-          <Link href={spotify.trackUrl} target={"_blank"} className="spotify-div">
+          <Link
+            href={spotify.trackUrl}
+            target={"_blank"}
+            className="spotify-div"
+          >
             <svg
               viewBox="0 0 24 24"
               width={"25px"}
@@ -81,14 +85,6 @@ export default function Top() {
             </div>
           </Link>
         )}
-      </div>
-      <hr />
-      <div className={"about-content"}>
-        <h2>Something about me</h2>
-        Hi! I&apos;m Paweł, also known as RaiderHCPlay. I&apos;m a web
-        developer. I love TypeScript. In free time I love reading mangas,
-        watching anime, playing games and listening to Persona 3 OST and
-        Jojo&apos;s Bizarre Adventure.
       </div>
     </>
   );
