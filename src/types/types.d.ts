@@ -15,7 +15,9 @@ interface Icons {
   name: string;
   icon: string;
   wakatime_name?: string;
+  template_icon: string;
   category: string;
+  color: string;
 }
 
 interface Media {
