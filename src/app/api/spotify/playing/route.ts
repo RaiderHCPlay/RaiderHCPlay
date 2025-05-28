@@ -1,13 +1,25 @@
 import getAccessToken from "../../../../../lib/spotify/getAccessToken";
 import { NextResponse } from "next/server";
 
+let accessToken: string | null;
+let expiration: number | null = null;
+
+async function checkAccessToken() {
+  if (!accessToken || Date.now() >= (expiration || 0)) {
+    const data = await getAccessToken();
+    accessToken = data.access_token;
+    expiration = Date.now() + data.expires_in * 1000;
+  }
+  return accessToken;
+}
+
 export async function GET() {
-  const accessToken = await getAccessToken();
+  const token = await checkAccessToken();
   const result = await fetch(
     "https://api.spotify.com/v1/me/player/currently-playing",
     {
       method: "GET",
-      headers: { Authorization: `Bearer ${accessToken}` },
+      headers: { Authorization: `Bearer ${token}` },
     },
   );
 

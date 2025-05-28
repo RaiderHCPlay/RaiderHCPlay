@@ -1,4 +1,5 @@
 require 'json'
+require 'nokogiri'
 
 scss_file_path = "./palette/palette.scss"
 icons_path = "./public/icons.json"
@@ -50,5 +51,45 @@ colored_icons.push({
 end
 
 File.write(icons_path, colored_icons.to_json())
+
+# SVG generating
+
+Dir.glob("./src/components/**/*.{tsx}").each do |file|
+  begin
+    file_content = File.read(file)
+    modified = false
+
+updated_content = file_content.gsub(/<svg.*?<\/svg>/m) do |svg_block|
+      begin
+        doc = Nokogiri::HTML.fragment(svg_block)
+
+        doc.css('svg').each do |svg|
+          svg['stroke'] = "##{palette["purple"]}"
+          svg['fill'] = "##{palette["purple"]}"
+        end
+
+        doc.css('svg path').each do |path|
+          path['stroke'] = "##{palette["purple"]}"
+          path['fill'] = "##{palette["purple"]}"
+        end
+
+        modified = true
+        doc.to_html
+      rescue
+        svg_block
+      end
+    end
+
+    if modified
+      File.write(file, updated_content)
+      puts "Updated #{file}"
+    else
+      puts "No update in #{file}"
+    end
+  rescue => e
+    puts "Error: #{e}"
+
+  end
+end
 
 puts "Generated colors"
