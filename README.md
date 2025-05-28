@@ -18,4 +18,4 @@ Hi! I'm RaiderHCPlay — a student & self-taught dev coding in Neovim.
 ***
 
 ### Media
-<a href="https://discord.com/users/483660439633395724"><img src="https://cdn.simpleicons.org/discord/b478e0" alt="Discord logo" width="40" height="40"></a> <a href="https://github.com/RaiderHCPlay"><img src="https://cdn.simpleicons.org/github/e88a4a" alt="GitHub logo" width="40" height="40"></a> <a href="https://wakatime.com/@RaiderHCPlay"><img src="https://cdn.simpleicons.org/wakatime/e6cc68" alt="Wakatime logo" width="40" height="40"></a>
+<a href="https://discord.com/users/483660439633395724"><img src="https://cdn.simpleicons.org/discord/7366d3" alt="Discord logo" width="40" height="40"></a> <a href="https://github.com/RaiderHCPlay"><img src="https://cdn.simpleicons.org/github/7366d3" alt="GitHub logo" width="40" height="40"></a> <a href="https://wakatime.com/@RaiderHCPlay"><img src="https://cdn.simpleicons.org/wakatime/7366d3" alt="Wakatime logo" width="40" height="40"></a>

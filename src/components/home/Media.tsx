@@ -29,7 +29,7 @@ export default function MediaComponent() {
                 viewBox="0 0 24 24"
                 width="40"
                 height="40"
-                xmlns={media.xmlns}
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <title>{media.name}</title>
                 <path d={`${media.path}`} />
