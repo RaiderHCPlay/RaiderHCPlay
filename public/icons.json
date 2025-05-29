@@ -89,5 +89,12 @@
     "template_icon": "https://cdn.simpleicons.org/alacritty/",
     "category": "setup",
     "color": "orange"
+  },
+  {
+    "name": "Prisma",
+    "icon": "https://cdn.simpleicons.org/prisma/4ebbe6",
+    "template_icon": "https://cdn.simpleicons.org/prisma/",
+    "category": "exploring",
+    "color": "sky"
   }
 ]
