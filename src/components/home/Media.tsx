@@ -1,22 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
+import Loading from "../global/Loading";
 
 export default function MediaComponent() {
   const [media, setMedia] = useState<Media[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const getMedia = useCallback(() => {
+  useEffect(() => {
+    setLoading(true);
     fetch("/media.json", {}).then(async (response) => {
       if (response.ok) {
         setMedia(await response.json());
+        setLoading(false);
       }
     });
   }, []);
 
-  useEffect(() => {
-    getMedia();
-  }, [getMedia]);
+  if (loading) return <Loading />;
 
   return (
     <>

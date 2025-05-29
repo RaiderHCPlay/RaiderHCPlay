@@ -72,7 +72,7 @@ export default function FavouritesSection() {
           <ul>
             <li>Jojo&apos;s Bizarre Adventure (peak)</li>
             <li>Shikanoko nokonoko koshitantan</li>
-            <li>Spy x Family </li>
+            <li>Spy x Family</li>
             <li>Devil May Cry (old and a new one)</li>
             <li>Oshi no ko</li>
             <li>Attack on Titan</li>

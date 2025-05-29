@@ -2,17 +2,23 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Loading from "../global/Loading";
 
 export default function TechComponent() {
   const [tech, setTech] = useState<Icons[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
+    setLoading(true);
     fetch("/icons.json", {}).then(async (res) => {
       if (res.ok) {
         setTech(await res.json());
+        setLoading(false);
       }
     });
   }, []);
+
+  if (loading) return <Loading />;
 
   return (
     <>
