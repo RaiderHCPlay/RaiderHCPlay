@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "generate:readme": "tsx ./scripts/gen_readme.ts",
-    "generate:palette": "tsx ./scripts/gen_colors.ts"
+    "generate:readme": "ruby ./scripts/gen_readme.rb",
+    "generate:palette": "ruby ./scripts/gen_colors.rb"
   },
   "dependencies": {
     "next": "15.3.2",
@@ -18,16 +18,15 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@next/eslint-plugin-next": "^15.1.8",
-    "@types/node": "^22.15.21",
-    "@types/react": "^19.1.5",
+    "@next/eslint-plugin-next": "^15.3.2",
+    "@types/node": "^22.15.23",
+    "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.5",
     "eslint": "^9.27.0",
     "eslint-config-next": "15.3.2",
     "eslint-plugin-react-hooks": "^5.2.0",
     "prettier": "^3.5.3",
     "sass": "^1.89.0",
-    "tsx": "^4.19.4",
     "typescript": "^5.8.3"
   }
 }

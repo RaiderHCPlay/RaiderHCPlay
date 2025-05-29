@@ -1,38 +1,93 @@
 [
   {
+    "name": "JavaScript",
+    "icon": "https://cdn.simpleicons.org/javascript/e6d163",
+    "template_icon": "https://cdn.simpleicons.org/javascript/",
+    "category": "language",
+    "color": "yellow"
+  },
+  {
     "name": "TypeScript",
-    "wakatime_name": "typescript",
-    "icon": "https://cdn.simpleicons.org/typescript/6aa3e6",
-    "category": "language"
+    "icon": "https://cdn.simpleicons.org/typescript/3e97e0",
+    "template_icon": "https://cdn.simpleicons.org/typescript/",
+    "category": "language",
+    "color": "sapphire"
   },
   {
     "name": "React",
-    "wakatime_name": "none",
-    "icon": "https://cdn.simpleicons.org/react/4e6cd4",
-    "category": "framework"
+    "icon": "https://cdn.simpleicons.org/react/3e97e0",
+    "template_icon": "https://cdn.simpleicons.org/react/",
+    "category": "framework",
+    "color": "sapphire"
   },
   {
     "name": "Vite",
-    "wakatime_name": "none",
-    "icon": "https://cdn.simpleicons.org/vite/e6cc68",
-    "category": "framework"
+    "icon": "https://cdn.simpleicons.org/vite/e6d163",
+    "template_icon": "https://cdn.simpleicons.org/vite/",
+    "category": "framework",
+    "color": "yellow"
   },
   {
     "name": "Next.js",
-    "wakatime_name": "none",
-    "icon": "https://cdn.simpleicons.org/next.js/86c9d4",
-    "category": "framework"
+    "icon": "https://cdn.simpleicons.org/next.js/4ebbe6",
+    "template_icon": "https://cdn.simpleicons.org/next.js/",
+    "category": "framework",
+    "color": "sky"
   },
   {
     "name": "Sass",
-    "wakatime_name": "scss",
-    "icon": "https://cdn.simpleicons.org/sass/e85f92",
-    "category": "language"
+    "icon": "https://cdn.simpleicons.org/sass/d35c9e",
+    "template_icon": "https://cdn.simpleicons.org/sass/",
+    "category": "language",
+    "color": "pink"
   },
   {
     "name": "Less",
-    "wakatime_name": "less",
-    "icon": "https://cdn.simpleicons.org/less/4e6cd4",
-    "category": "language"
+    "icon": "https://cdn.simpleicons.org/less/2a7dd3",
+    "template_icon": "https://cdn.simpleicons.org/less/",
+    "category": "language",
+    "color": "blue"
+  },
+  {
+    "name": "Tailwind",
+    "icon": "https://cdn.simpleicons.org/tailwindcss/3e97e0",
+    "template_icon": "https://cdn.simpleicons.org/tailwindcss/",
+    "category": "exploring",
+    "color": "sapphire"
+  },
+  {
+    "name": "Ruby",
+    "icon": "https://cdn.simpleicons.org/ruby/e04f5f",
+    "template_icon": "https://cdn.simpleicons.org/ruby/",
+    "category": "exploring",
+    "color": "red"
+  },
+  {
+    "name": "Arch Linux",
+    "icon": "https://cdn.simpleicons.org/archlinux/3e97e0",
+    "template_icon": "https://cdn.simpleicons.org/archlinux/",
+    "category": "setup",
+    "color": "sapphire"
+  },
+  {
+    "name": "Neovim",
+    "icon": "https://cdn.simpleicons.org/neovim/68c792",
+    "template_icon": "https://cdn.simpleicons.org/neovim/",
+    "category": "setup",
+    "color": "green"
+  },
+  {
+    "name": "Hyprland",
+    "icon": "https://cdn.simpleicons.org/hyprland/2a7dd3",
+    "template_icon": "https://cdn.simpleicons.org/hyprland/",
+    "category": "setup",
+    "color": "blue"
+  },
+  {
+    "name": "Alacritty",
+    "icon": "https://cdn.simpleicons.org/alacritty/e0853e",
+    "template_icon": "https://cdn.simpleicons.org/alacritty/",
+    "category": "setup",
+    "color": "orange"
   }
 ]

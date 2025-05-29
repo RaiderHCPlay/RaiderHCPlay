@@ -4,6 +4,7 @@
 @use "sections/palette";
 @use "sections/projects";
 @use "sections/tech";
+@use "sections/favourites.scss";
 
 footer {
   text-align: center;
@@ -84,5 +85,9 @@ hr {
   padding-left: 1.5rem;
   h2 {
     margin-bottom: 10px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    text-align: center;
   }
 }

@@ -14,14 +14,15 @@ interface Projects {
 interface Icons {
   name: string;
   icon: string;
-  wakatime_name: string;
-  category?: string;
+  wakatime_name?: string;
+  template_icon: string;
+  category: string;
+  color: string;
 }
 
 interface Media {
   url: string;
   icon: string;
-  xmlns: string;
   path: string;
   name: string;
 }

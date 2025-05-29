@@ -1,22 +1,24 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import Loading from "../global/Loading";
 
 export default function ProjectsComponent() {
   const [projects, setProjects] = useState<Projects[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const getProjects = useCallback(() => {
+  useEffect(() => {
+    setLoading(true);
     fetch("/projects.json", {}).then(async (response) => {
       if (response.ok) {
         setProjects(await response.json());
+        setLoading(false);
       }
     });
   }, []);
 
-  useEffect(() => {
-    getProjects();
-  }, [getProjects]);
+  if (loading) return <Loading />;
 
   return (
     <>

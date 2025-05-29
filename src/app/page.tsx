@@ -1,17 +1,23 @@
-import ProjectsComponent from "@/components/layout/home/Projects";
-import MediaComponent from "@/components/layout/home/Media";
-import TechComponent from "@/components/layout/home/Tech";
-import Footer from "@/components/layout/global/Footer";
-import Top from "@/components/layout/home/Top";
+import ProjectsComponent from "@/components/home/Projects";
+import MediaComponent from "@/components/home/Media";
+import TechComponent from "@/components/home/Tech";
+import Footer from "@/components/global/Footer";
+import Top from "@/components/home/Top";
+import AboutSection from "@/components/home/About";
+import FavouritesSection from "@/components/home/Favourites";
 
 export default function Home() {
   return (
     <div className={"home-wrapper"}>
       <Top />
       <hr />
+      <AboutSection />
+      <hr />
       <TechComponent />
       <hr />
       <ProjectsComponent />
+      <hr />
+      <FavouritesSection />
       <hr />
       <MediaComponent />
       <Footer />
