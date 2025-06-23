@@ -3,3 +3,4 @@
 /.git/
 .ruby-lsp/
 *.env*
+.vercel
