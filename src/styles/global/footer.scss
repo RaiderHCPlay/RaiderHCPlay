@@ -1,12 +1,12 @@
-@use "mixins";
+@use 'mixins';
 
 //footer styling
 .footer-container {
-  @include mixins.flex(center, center, column);
-  select {
-    margin-top: 5px;
-    background-color: var(--mantle);
-    color: var(--text);
-    border-color: var(--crust);
-  }
+	@include mixins.flex(center, center, column);
+	select {
+		margin-top: 5px;
+		background-color: var(--mantle);
+		color: var(--text);
+		border-color: var(--crust);
+	}
 }

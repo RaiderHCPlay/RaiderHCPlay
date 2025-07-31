@@ -1,28 +1,28 @@
 @keyframes skeleton {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @mixin skeleton($duration, $args) {
-  animation: $duration skeleton $args;
+	animation: $duration skeleton $args;
 }
 
 @mixin spin($duration, $args) {
-  animation: $duration spin $args;
+	animation: $duration spin $args;
 }
