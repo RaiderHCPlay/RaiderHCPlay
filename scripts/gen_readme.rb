@@ -1,8 +1,8 @@
 require 'json'
 
-projects = JSON.parse(File.read("./public/projects.json"))
-icons = JSON.parse(File.read("./public/icons.json"))
-media = JSON.parse(File.read("./public/media.json"))
+projects = JSON.parse(File.read("./static/projects.json"))
+icons = JSON.parse(File.read("./static/icons.json"))
+media = JSON.parse(File.read("./static/media.json"))
 
 projects_array = []
 icons_array = []

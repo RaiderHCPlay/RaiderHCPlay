@@ -1,36 +1,36 @@
-@use "../../global/mixins";
-@use "../../global/globals";
+@use '../../global/mixins';
+@use '../../global/globals';
 
 .tech-wrapper {
-  margin: 1.5rem;
-  h2 {
-    margin-bottom: 10px;
-  }
+	margin: 1.5rem;
+	h2 {
+		margin-bottom: 10px;
+	}
 }
 
 .tech-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  @media only screen and (max-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-    .tech-div {
-      margin-right: 0;
-    }
-  }
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	justify-content: center;
+	align-items: flex-start;
+	gap: 20px;
+	@media only screen and (max-width: 700px) {
+		grid-template-columns: 1fr 1fr;
+		.tech-div {
+			margin-right: 0;
+		}
+	}
 }
 
 .tech-div {
-  text-align: center;
-  margin-right: 5rem;
+	text-align: center;
+	margin-right: 5rem;
 }
 
 .lang {
-  @include mixins.flex(center, flex-start);
-  margin: 5px 0 5px 0;
-  img {
-    margin-right: 10px;
-  }
+	@include mixins.flex(center, flex-start);
+	margin: 5px 0 5px 0;
+	img {
+		margin-right: 10px;
+	}
 }
