@@ -1,16 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Loading from '../global/Loading.svelte';
-	let spotify: SpotifyData;
+	let spotify: SpotifyData | null = null;
 
 	onMount(() => {
 		let isMounted = true;
-		console.log('mounted');
 		const fetchSpotify = () => {
 			fetch('/api/spotify/playing', { method: 'GET' }).then(async (res) => {
 				if (res.ok) {
 					const data = await res.json();
-					if (isMounted && JSON.stringify(data) !== JSON.stringify(spotify)) {
+					if (isMounted) {
 						spotify = data;
 					}
 				}

@@ -1,10 +1,12 @@
+import { env } from '$env/dynamic/private';
+
 export default async function getAccessToken() {
-	const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN || '';
+	const refresh_token = env.SPOTIFY_REFRESH_TOKEN || '';
 	const res = await fetch('https://accounts.spotify.com/api/token', {
 		method: 'POST',
 		headers: {
 			Authorization: `Basic ${Buffer.from(
-				`${process.env.SPOTIFY_CLIENT}:${process.env.SPOTIFY_CLIENT_SECRET}`
+				`${env.SPOTIFY_CLIENT}:${env.SPOTIFY_CLIENT_SECRET}`
 			).toString('base64')}`,
 			'Content-Type': 'application/x-www-form-urlencoded'
 		},
@@ -14,7 +16,6 @@ export default async function getAccessToken() {
 			refresh_token
 		})
 	});
-
 	const jsoned = await res.json();
 	return jsoned;
 }
