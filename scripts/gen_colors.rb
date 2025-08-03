@@ -2,10 +2,10 @@ require 'json'
 require 'nokogiri'
 
 scss_file_path = "./palette/palette.scss"
-icons_path = "./public/icons.json"
+icons_path = "./static/icons.json"
 
 palette = JSON.parse(File.read("./palette/palette-data.json"))
-icons = JSON.parse(File.read("./public/icons.json"))
+icons = JSON.parse(File.read("./static/icons.json"))
 
 puts "Generating new colors"
 
