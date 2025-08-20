@@ -38,7 +38,7 @@ File.write("./README.md", <<~HEREDOC
 
   Hey, I’m Paweł (aka RaiderHCPlay).  
   Web dev by day, anime and gaming enthusiast by night.  
-  I experiment with Svelte, Ruby, and Rust, and do all my coding in Neovim. 
+  I experiment with Svelte, Ruby, and Rust, and do all my coding in Neovim.  
   I hope that Svelte will win one day... for my sanity. 
 
   <p align="left">
@@ -46,6 +46,8 @@ File.write("./README.md", <<~HEREDOC
     <img src="https://img.shields.io/badge/Svelte%20Enjoyer-F73C00?logo=svelte&logoColor=white" />
     <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?logo=archlinux&logoColor=white" />
   </p>
+
+  ***
 
   ### 🚀Projects
   #{projects_array.join("\n\n")}

@@ -7,7 +7,7 @@ Hi! I'm RaiderHCPlay — a student & self-taught dev coding in Neovim.
 
 Hey, I’m Paweł (aka RaiderHCPlay).  
 Web dev by day, anime and gaming enthusiast by night.  
-I experiment with Svelte, Ruby, and Rust, and do all my coding in Neovim. 
+I experiment with Svelte, Ruby, and Rust, and do all my coding in Neovim.  
 I hope that Svelte will win one day... for my sanity. 
 
 <p align="left">
@@ -15,6 +15,8 @@ I hope that Svelte will win one day... for my sanity.
   <img src="https://img.shields.io/badge/Svelte%20Enjoyer-F73C00?logo=svelte&logoColor=white" />
   <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?logo=archlinux&logoColor=white" />
 </p>
+
+***
 
 ### 🚀Projects
 <span>- <a href="https://github.com/RaiderHCPlay/RaiderHCPlay" target="_blank">`RaiderHCPlay/RaiderHCPlay`</a> My repo for github profile and website </span>
