@@ -25,7 +25,7 @@
 <span>- <a href="https://github.com/catppuccin/userstyles" target="_blank">`catppuccin/userstyles`</a> Catppuccin userstyles, currently maintainer of <a href="https://github.com/catppuccin/userstyles/tree/main/styles/react.dev" target="_blank">React.dev</a></span>
   ***
   ### 🛠️ Tech Stack
-  <img src="https://cdn.simpleicons.org/javascript/e6d163" alt="JavaScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/typescript/3e97e0" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react/3e97e0" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js/4ebbe6" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass/d35c9e" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/less/2a7dd3" alt="Less" width="40" height="40"> <img src="https://cdn.simpleicons.org/tailwindcss/3e97e0" alt="Tailwind" width="40" height="40">
+  <img src="https://cdn.simpleicons.org/javascript/e6d163" alt="JavaScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/typescript/3e97e0" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react/3e97e0" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js/4ebbe6" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass/d35c9e" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/less/2a7dd3" alt="Less" width="40" height="40"> <img src="https://cdn.simpleicons.org/tailwindcss/3e97e0" alt="Tailwind" width="40" height="40"> <img src="https://cdn.simpleicons.org/svelte/e0853e" alt="SvelteKit" width="40" height="40">
   ***
 
   ### 🌐 Media
