@@ -16,5 +16,10 @@
         "url": "https://github.com/catppuccin/userstyles/tree/main/styles/react.dev"
       }
     ]
+  },
+  {
+	"name": "sveltejs/svelte.dev",
+		"description": "Contributed small fixes to the svelte.dev website",
+		"github": "https://github.com/sveltejs/svelte.dev"
   }
 ]
