@@ -19,7 +19,7 @@
   },
   {
 	"name": "sveltejs/svelte.dev",
-		"description": "Made small improvements to the svelte.dev website",
+		"description": "Contributed small fixes to the svelte.dev website",
 		"github": "https://github.com/sveltejs/svelte.dev"
   }
 ]

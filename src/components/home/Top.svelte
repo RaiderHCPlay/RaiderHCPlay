@@ -36,7 +36,7 @@
 		<h2>RaiderHCPlay</h2>
 	</div>
 	{#if spotify?.error || !spotify?.isPlaying}
-		<div class="spotify-div">No currently played track</div>
+		<div class="spotify-div">Nothing playing right now</div>
 	{/if}
 	{#if spotify?.isPlaying}
 		<a href={spotify.trackUrl} target="_blank" class="spotify-div">
