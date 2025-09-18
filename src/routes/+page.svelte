@@ -5,6 +5,7 @@
 	import About from '../components/home/About.svelte';
 	import Media from '../components/home/Media.svelte';
 	import Projects from '../components/home/Projects.svelte';
+	import GitHub from '../components/home/GitHub.svelte';
 </script>
 
 <div class="home-wrapper">
@@ -15,6 +16,8 @@
 	<Tech />
 	<hr />
 	<Projects />
+	<hr />
+	<GitHub />
 	<hr />
 	<Media />
 	<Footer />

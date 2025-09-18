@@ -12,6 +12,7 @@ footer {
 
 h2 {
 	text-align: left;
+
 	@media only screen and (max-width: 700px) {
 		text-align: center;
 	}
@@ -35,6 +36,7 @@ h2 {
 			border-radius: 50%;
 		}
 	}
+
 	.spotify-div {
 		display: flex;
 		align-items: center;
@@ -43,22 +45,27 @@ h2 {
 		text-decoration-line: none;
 		margin-top: 10px;
 		text-align: start;
+
 		img {
 			margin-left: 7px;
 			margin-right: 5px;
 		}
+
 		@media only screen and (max-width: 700px) {
 			flex-direction: column;
 			text-align: center;
 			align-items: center;
+
 			img {
 				width: 60px;
 				height: 60px;
 				margin-top: 10px;
 			}
 		}
+
 		.spotify-content {
 			margin-left: 2px;
+
 			@media only screen and (max-width: 700px) {
 				margin-top: 10px;
 			}
@@ -76,13 +83,15 @@ h2 {
 }
 
 hr {
-	border-color: var(--purple);
+	border-color: var(--orange);
 	margin: 1.5rem 0 1.5rem 0;
 }
 
-.about-content {
+.about-content,
+.github-content {
 	text-align: left;
-	padding-left: 1.5rem;
+	padding: 0 1.5rem;
+
 	h2 {
 		margin-bottom: 10px;
 	}
