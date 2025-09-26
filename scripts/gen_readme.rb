@@ -44,7 +44,7 @@ File.write("./README.md", <<~HEREDOC
 
   ***
 
-  ### 🚀Projects
+  ### 🚀 Projects
   #{projects_array.join("\n\n")}
   ***
   ### 🛠️ Tech Stack

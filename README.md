@@ -20,7 +20,7 @@ Hey, I’m Paweł (aka RaiderHCPlay).
 
 ---
 
-### 🚀Projects
+### 🚀 Projects
 
 <span>- <a href="https://github.com/RaiderHCPlay/RaiderHCPlay" target="_blank">`RaiderHCPlay/RaiderHCPlay`</a> My repo for github profile and website </span>
 
