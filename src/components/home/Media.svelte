@@ -17,7 +17,7 @@
 
 {#if media}
 	<div class="media-content">
-		{#each media as media}
+		{#each media as media (media.name)}
 			<a target="_blank" href={`${media.url}`}>
 				<svg
 					role="img"
