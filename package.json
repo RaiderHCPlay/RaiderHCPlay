@@ -13,7 +13,8 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"gen::readme": "ruby ./scripts/gen_readme.rb",
-		"gen::palette": "ruby ./scripts/gen_colors.rb"
+		"gen::palette": "ruby ./scripts/gen_colors.rb",
+		"run::checks": "ruby ./scripts/checks.rb"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.3.1",
