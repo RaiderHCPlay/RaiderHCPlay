@@ -4,10 +4,12 @@
 	@include mixins.flex();
 	margin-bottom: 10px;
 	margin-top: 1.5rem;
+
 	a {
 		width: 50px;
-		fill: var(--purple);
+		fill: var(--orange);
 		transition: fill 0.5s;
+
 		&:hover {
 			fill: var(--overlay2);
 		}
