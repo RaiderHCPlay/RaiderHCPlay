@@ -4,52 +4,52 @@
 // global styling
 
 @font-face {
-	font-family: 'Mononoki Nerd Font';
-	src: url('/fonts/MononokiNerdFont-Regular.ttf') format('ttf');
-	font-style: normal;
+  font-family: 'Mononoki Nerd Font';
+  src: url('/fonts/MononokiNerdFont-Regular.ttf') format('ttf');
+  font-style: normal;
 }
 
 :root {
-	color: var(--text);
-	background-color: var(--base);
-	transition:
-		background 0.5s,
-		color 0.5s;
+  color: var(--text);
+  background-color: var(--base);
+  transition:
+    background 0.5s,
+    color 0.5s;
 }
 
 * {
-	margin: 0;
+  margin: 0;
 }
 
 a {
-	transition:
-		background 0.4s,
-		color 0.4s;
+  transition:
+    background 0.4s,
+    color 0.4s;
 }
 
 // not found styling
 
 .not-found {
-	text-align: center;
-	margin-top: 2%;
-	margin-bottom: 2%;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 // Loading styling
 
 .loading {
-	font-size: 1.5rem;
-	color: var(--subtext0);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  font-size: 1.5rem;
+  color: var(--subtext0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-	.loading-spinner {
-		@include animations.spin(1s, linear infinite);
-		height: 40px;
-		width: 40px;
-		border-radius: 50%;
-		border: 7px solid var(--orange);
-		border-top-color: transparent;
-	}
+  .loading-spinner {
+    @include animations.spin(1s, linear infinite);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 7px solid var(--sapphire);
+    border-top-color: transparent;
+  }
 }

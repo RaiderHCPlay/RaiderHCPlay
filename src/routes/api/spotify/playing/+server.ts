@@ -21,17 +21,13 @@ export async function GET() {
 	});
 
 	if (result.status === 204) {
-		return json({ error: 'Nothing playing right now' }, { status: 204 });
-	}
-
-	if (!result.ok) {
-		return json({ error: 'Spotify API error' }, { status: result.status });
+		return json({ isPlaying: false });
 	}
 
 	const data = await result.json();
 
 	if (!data || !data.item) {
-		return json({ error: 'Nothing playing right now' }, { status: 204 });
+		return json({ isPlaying: false });
 	}
 
 	const track = data.item;
