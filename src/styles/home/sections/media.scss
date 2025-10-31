@@ -1,17 +1,17 @@
 @use '../../global/mixins';
 
 .media-content {
-	@include mixins.flex();
-	margin-bottom: 10px;
-	margin-top: 1.5rem;
+  @include mixins.flex();
+  margin-bottom: 10px;
+  margin-top: 1.5rem;
 
-	a {
-		width: 50px;
-		fill: var(--orange);
-		transition: fill 0.5s;
+  a {
+    width: 50px;
+    fill: var(--sapphire);
+    transition: fill 0.5s;
 
-		&:hover {
-			fill: var(--overlay2);
-		}
-	}
+    &:hover {
+      fill: var(--overlay2);
+    }
+  }
 }
