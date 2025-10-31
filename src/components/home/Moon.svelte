@@ -50,30 +50,52 @@
 		{#each moons as moon (moon.name)}
 			{#if moon.name === moonData.phase}
 				<svelte:component this={moon.component} />
-				<div>
+				<div class="moon-info">
 					<h3>Moon phase: {moonData.phase}</h3>
 					<h3>Current moon age: {moonData.age.toFixed(1)} days</h3>
 					{#if daysToFullMoon > 0}
 						<h3>Days until full moon: {daysToFullMoon.toFixed(0)}</h3>
 					{:else}
-						<h3>It's full moon again. Crazy how time flies, isn't it?</h3>
+						<h3>It's full moon again.</h3>
+						<h3>Crazy how time flies.</h3>
 						<a
 							href="https://open.spotify.com/track/3Jl2LQmRwbXEF2lO1RTvxn?si=c168ee4b166f4514"
-							target="_blank">Enjoy your life at the fullest.</a
+							target="_blank">Full Moon Full Life - Persona 3 Reload</a
 						>
 					{/if}
 				</div>
 			{/if}
 		{/each}
 	{:else}
-		<h3>Watching moon...</h3>
+		<div>Watching moon...</div>
 	{/if}
 </div>
 
 <style>
 	.moon-section {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: center;
+		padding-top: 15px;
+
+		@media screen and (max-width: 700px) {
+			flex-direction: column;
+		}
+	}
+
+	.moon-info {
+		margin-left: 15px;
+		font-size: clamp(12px, 2vw, 16px);
+		color: var(--text);
+		text-align: center;
+
+		a {
+			text-decoration: none;
+			color: var(--sapphire);
+
+			&:hover {
+				color: var(--overlay2);
+			}
+		}
 	}
 </style>
