@@ -35,12 +35,15 @@
 		const response = await fetch('/api/moons', { method: 'GET' });
 		const data = await response.json();
 		moonData = data;
-		if (data.age < 14.765) {
-			daysToFullMoon = 14.765 - data.age;
-		} else if (data.age > 14.765) {
-			daysToFullMoon = 29.53 - data.age + 14.765;
-		} else {
+		const cycleDays = 29.53058867;
+		const fullMoonAge = cycleDays / 2;
+
+		if (data.phase === 'Full Moon') {
 			daysToFullMoon = 0;
+		} else if (data.age < fullMoonAge) {
+			daysToFullMoon = fullMoonAge - data.age;
+		} else {
+			daysToFullMoon = cycleDays - data.age + fullMoonAge;
 		}
 	});
 </script>
@@ -54,7 +57,7 @@
 					<h3>Moon phase: {moonData.phase}</h3>
 					<h3>Current moon age: {moonData.age.toFixed(1)} days</h3>
 					{#if daysToFullMoon > 0}
-						<h3>Days until full moon: {daysToFullMoon.toFixed(0)}</h3>
+						<h3>Days until full moon: {daysToFullMoon.toFixed(1)}</h3>
 					{:else}
 						<h3>It's full moon again.</h3>
 						<h3>Crazy how time flies.</h3>
