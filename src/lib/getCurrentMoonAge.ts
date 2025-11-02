@@ -1,5 +1,5 @@
 export function getCurrentMoonAge() {
-	const knownNewMoonDate = Date.UTC(2025, 9, 21, 12, 25, 0);
+	const knownNewMoonDate = Date.UTC(2000, 0, 6, 18, 14, 0);
 	const cycleDays = 29.53058867;
 	const now = Date.now();
 	const substractedDate = now - knownNewMoonDate;
