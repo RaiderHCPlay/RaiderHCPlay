@@ -1,3 +1,3 @@
 <h2 class="not-found">
-	Page is not available. Go back to <a href="/">main page</a>
+	Sorry, but this route doesn't exist. <a href="/">cd /home</a>
 </h2>
