@@ -1,4 +1,4 @@
-import getAccessToken from '$lib/getAccessToken';
+import getAccessToken from '$lib/server/getAccessToken';
 import { json } from '@sveltejs/kit';
 
 let accessToken: string | null;

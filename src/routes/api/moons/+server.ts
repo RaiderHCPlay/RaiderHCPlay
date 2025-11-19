@@ -1,4 +1,4 @@
-import { getCurrentMoonAge } from '$lib/getCurrentMoonAge';
+import { getCurrentMoonAge } from '$lib/server/getCurrentMoonAge';
 
 export async function GET() {
 	const age = getCurrentMoonAge();
