@@ -15,7 +15,7 @@
 			<p>My projects</p>
 			<a href="/projects"><code>cd ./projects</code></a>
 		</div>
-		<div>
+		<div class="other-container">
 			<Spotify />
 			<MoonComponent />
 		</div>
@@ -34,34 +34,45 @@
 
 	h1 {
 		font-size: clamp(35px, 2vw, 60px);
+		color: var(--accent);
 	}
 
 	subtext {
-		font-size: clamp(20px, 2vw, 30px);
+		font-size: clamp(15px, 2vw, 25px);
 	}
 
 	.containers-wrapper {
 		display: flex;
 		flex-direction: column;
-
 		align-items: center;
+		justify-content: center;
+		margin-top: 15px;
+		width: 80%;
 	}
 
 	.container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
 		p,
 		code {
-			font-size: clamp(20px, 2vw, 30px);
+			margin: 0;
+			font-size: clamp(12px, 2vw, 20px);
 		}
 
 		a {
 			margin-left: 10px;
-			font-size: clamp(20px, 2vw, 25px);
+			font-size: clamp(12px, 2vw, 16px);
 			color: var(--accent);
 			text-decoration: none;
 		}
+	}
+
+	.other-container {
+		margin-top: 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 </style>

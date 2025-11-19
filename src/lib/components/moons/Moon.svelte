@@ -63,7 +63,7 @@
 						<h3>Crazy how time flies.</h3>
 						<a
 							href="https://open.spotify.com/track/3Jl2LQmRwbXEF2lO1RTvxn?si=c168ee4b166f4514"
-							target="_blank">Full Moon Full Life - Persona 3 Reload</a
+							target="_blank"><h3>Full Moon Full Life - Persona 3 Reload</h3></a
 						>
 					{/if}
 				</div>
@@ -91,14 +91,17 @@
 		font-size: clamp(12px, 2vw, 16px);
 		color: var(--text);
 		text-align: center;
+	}
+	a {
+		text-decoration: none;
+		color: var(--accent);
 
-		a {
-			text-decoration: none;
-			color: var(--sapphire);
-
-			&:hover {
-				color: var(--overlay2);
-			}
+		&:hover {
+			color: var(--overlay2);
 		}
+	}
+	h3 {
+		font-size: clamp(12px, 2vw, 16px);
+		margin: 5px 0 0 0;
 	}
 </style>
