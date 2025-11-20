@@ -12,7 +12,7 @@
 			<a href="/about"><code>cd ./about</code></a>
 		</div>
 		<div class="container">
-			<p>My projects</p>
+			<p>My projects:</p>
 			<a href="/projects"><code>cd ./projects</code></a>
 		</div>
 		<div class="other-container">
@@ -33,8 +33,9 @@
 	}
 
 	h1 {
-		font-size: clamp(35px, 2vw, 60px);
+		font-size: clamp(35px, 3vw, 85px);
 		color: var(--accent);
+		margin-bottom: 10px;
 	}
 
 	subtext {
