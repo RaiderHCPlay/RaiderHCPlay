@@ -6,3 +6,4 @@ export { default as WaxingCrescentMoon } from './WaxingCrescent.svelte';
 export { default as WaningCrescentMoon } from './WaningCrescent.svelte';
 export { default as WaxingGibbousMoon } from './WaxingGibbous.svelte';
 export { default as WaningGibbousMoon } from './WaningGibbous.svelte';
+export { default as MoonComponent } from './Moon.svelte';

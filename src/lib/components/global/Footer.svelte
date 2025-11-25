@@ -7,6 +7,19 @@
 	});
 </script>
 
-<div class="footer-container">
+<div>
 	<footer>© {year} RaiderHCPlay</footer>
 </div>
+
+<style>
+	div {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	footer {
+		color: var(--text);
+		font-size: clamp(15px, 2vw, 20px);
+	}
+</style>
