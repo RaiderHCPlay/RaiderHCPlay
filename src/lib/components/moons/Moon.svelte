@@ -45,7 +45,21 @@
 		} else {
 			daysToFullMoon = cycleDays - data.age + fullMoonAge;
 		}
+		changeTheme();
 	});
+
+	function changeTheme() {
+		let theme = 'normal';
+
+		if (moonData.phase === 'Full Moon') {
+			theme = 'moon';
+		} else {
+			theme = 'normal';
+		}
+		document.documentElement.removeAttribute('data-theme');
+		document.documentElement.setAttribute('data-theme', theme);
+		localStorage.setItem('data-theme', theme);
+	}
 </script>
 
 <div class="moon-section">

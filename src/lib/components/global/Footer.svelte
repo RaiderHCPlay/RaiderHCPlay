@@ -19,6 +19,7 @@
 		align-items: center;
 	}
 	footer {
+		color: var(--text);
 		font-size: clamp(15px, 2vw, 20px);
 	}
 </style>

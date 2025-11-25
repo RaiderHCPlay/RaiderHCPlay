@@ -5,7 +5,7 @@
 
 <div class="home-wrapper">
 	<h1>RaiderHCPlay</h1>
-	<subtext>Just a student and web developer</subtext>
+	<subtext>Just a web developer</subtext>
 	<div class="containers-wrapper">
 		<div class="container">
 			<p>More info about me:</p>

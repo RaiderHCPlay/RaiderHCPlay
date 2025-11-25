@@ -61,6 +61,7 @@
 <style>
 	:global([data-theme='normal']) {
 		--accent: #79d6fc;
+		--accent2: #2a7dd3;
 		--bg: #181822;
 		--text: #c9d3ea;
 		--subtext0: #a3aec9;
@@ -73,10 +74,41 @@
 		--overlay0: #4a4963;
 		--overlay1: #55546f;
 		--overlay2: #605f7a;
+		--pink: #d35c9e;
+		--purple: #8c7cf0;
+		--sapphire: #79d6fc;
+		--yellow: #e6d163;
+		--peach: #e89a7a;
+		--green: #68c792;
+		--blue: #2a7dd3;
+		--red: #e04f5f;
+		--black: #05070b;
 	}
 
 	:global([data-theme='moon']) {
-		--accent: #68c792;
+		--accent: #81cb1e;
+		--accent2: #e4fd32;
+		--bg: #0a0e1a;
+		--text: #d3e7f7;
+		--subtext0: #b7c9db;
+		--subtext1: #91a0b5;
+		--crust: #04070c;
+		--mantle: #0c111a;
+		--surface0: #182133;
+		--surface1: #222d44;
+		--surface2: #2c3752;
+		--overlay0: #374363;
+		--overlay1: #415075;
+		--overlay2: #4c5d88;
+		--pink: #d35c9e;
+		--purple: #8c7cf0;
+		--sapphire: #5bff8f;
+		--yellow: #e6d163;
+		--peach: #e89a7a;
+		--green: #68c792;
+		--blue: #2a7dd3;
+		--red: #e04f5f;
+		--black: #05070b;
 	}
 
 	:global(body) {
