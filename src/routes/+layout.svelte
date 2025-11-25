@@ -1,6 +1,11 @@
 <script lang="ts">
-	let { children } = $props();
 	import Footer from '$lib/components/global/Footer.svelte';
+	import { dev } from '$app/environment';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+
+	let { children } = $props();
+
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
 </script>
 
 <svelte:head>
