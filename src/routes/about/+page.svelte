@@ -1,23 +1,25 @@
 <script>
-	// import Interests from '$lib/components/about/Interests.svelte';
-	// import Tech from '$lib/components/about/Tech.svelte';
+	import Favourites from '$lib/components/about/Favourites.svelte';
+	import Tech from '$lib/components/about/Tech.svelte';
+	import About from '$lib/components/about/About.svelte';
+	import Github from '$lib/components/about/Github.svelte';
+	import Media from '$lib/components/about/Media.svelte';
 </script>
 
 <div>
-	Page is under construction.
-	<a href="/">cd ..</a>
-	<!-- <div> -->
-	<!-- 	<a href="/">cd ..</a> -->
-	<!-- 	<h1>About me</h1> -->
-	<!-- </div> -->
-	<!-- <div> -->
-	<!-- 	<About /> -->
-	<!-- 	<Tech /> -->
-	<!-- </div> -->
-	<!-- <div> -->
-	<!-- 	<Interests /> -->
-	<!-- 	<Github /> -->
-	<!-- </div> -->
+	<div>
+		<a href="/">cd ..</a>
+	</div>
+
+	<div>
+		<About />
+		<Favourites />
+		<Media />
+	</div>
+	<div>
+		<Tech />
+		<Github />
+	</div>
 </div>
 
 <style>

@@ -8,7 +8,7 @@
 		WaningCrescentMoon,
 		WaxingCrescentMoon,
 		FirstQuarterMoon
-	} from '../moons';
+	} from '$lib/components/moons';
 
 	import { onMount } from 'svelte';
 

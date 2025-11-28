@@ -23,7 +23,6 @@ interface Icons {
 interface Media {
 	url: string;
 	icon: string;
-	path: string;
 	name: string;
 }
 
