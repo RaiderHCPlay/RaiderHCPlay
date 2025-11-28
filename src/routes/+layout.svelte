@@ -2,9 +2,11 @@
 	import Footer from '$lib/components/global/Footer.svelte';
 	import { dev } from '$app/environment';
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
 	let { children } = $props();
 
+	injectSpeedInsights();
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
 </script>
 
@@ -65,29 +67,37 @@
 
 <style>
 	:global([data-theme='normal']) {
-		--accent: #79d6fc;
-		--accent2: #2a7dd3;
-		--bg: #181822;
-		--text: #c9d3ea;
-		--subtext0: #a3aec9;
-		--subtext1: #7d89a6;
-		--crust: #0c0b11;
-		--mantle: #12121a;
-		--surface0: #2a2937;
-		--surface1: #353546;
-		--surface2: #403f55;
-		--overlay0: #4a4963;
-		--overlay1: #55546f;
-		--overlay2: #605f7a;
-		--pink: #d35c9e;
-		--purple: #8c7cf0;
-		--sapphire: #79d6fc;
+		--accent: #46d8f8;
+		--accent2: #0a30f9;
+
+		--bg: #070d16;
+		--text: #e5eef9;
+
+		--subtext0: #d3d8de;
+		--subtext1: #89a3be;
+
+		--crust: #03020b;
+		--mantle: #081656;
+
+		--surface0: #2d6388;
+		--surface1: #3a537e;
+		--surface2: #4a95bb;
+
+		--overlay0: #171f2b;
+		--overlay1: #274a77;
+		--overlay2: #7a93ad;
+
+		--pink: #ac5c78;
+		--purple: #716998;
+		--sapphire: #11acf0;
+
 		--yellow: #e6d163;
 		--peach: #e89a7a;
 		--green: #68c792;
-		--blue: #2a7dd3;
-		--red: #e04f5f;
-		--black: #05070b;
+		--blue: #0a30f9;
+
+		--red: #bc5570;
+		--black: #000000;
 	}
 
 	:global([data-theme='moon']) {
