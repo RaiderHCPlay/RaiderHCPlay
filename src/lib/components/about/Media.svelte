@@ -11,20 +11,32 @@
 	}
 </script>
 
-<div>
+<div class="media-container">
 	<h1>Media</h1>
-	{#await getMedia()}
-		<Loading />
-	{:then data}
-		{#each data as media (media.name)}
-			<a href={media.url} target="_blank">
-				<div>
-					<img src={`${media.icon}/${accent.substring(1)}`} alt={media.name} />
-					{media.name}
-				</div>
-			</a>
-		{/each}
-	{:catch}
-		<div>Error has occured.</div>
-	{/await}
+	<div class="media-content">
+		{#await getMedia()}
+			<Loading />
+		{:then data}
+			{#each data as media (media.name)}
+				<a href={media.url} target="_blank">
+					<div>
+						<img src={`${media.icon}/${accent.substring(1)}`} alt={media.name} />
+					</div>
+				</a>
+			{/each}
+		{:catch}
+			<div>Error has occured.</div>
+		{/await}
+	</div>
 </div>
+
+<style>
+	.media-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.media-content {
+		display: flex;
+	}
+</style>

@@ -56,8 +56,9 @@
 	<script type="text/javascript">
 		(() => {
 			const theme = localStorage.getItem('raiderhcplay-website-theme') || 'normal';
+			document.documentElement.removeAttribute('data-theme');
 			document.documentElement.setAttribute('data-theme', theme);
-			localStorage.setItem('data-theme', theme);
+			localStorage.setItem('raiderhcplay-website-theme', theme);
 		})();
 	</script>
 </svelte:head>
