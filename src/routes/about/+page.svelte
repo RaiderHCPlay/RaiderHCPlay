@@ -7,19 +7,19 @@
 
 <div class="about-container">
 	<a href="/">cd ..</a>
-	<div class="panels">
+	<div>
 		<div class="upper-panels">
-			<div class="left-panel">
+			<div class="left">
 				<About />
 			</div>
-			<div>
+			<div class="middle">
 				<img src="https://avatars.githubusercontent.com/u/170134946?v=4" alt="My avatar" />
 			</div>
-			<div class="right-panel">
+			<div class="right">
 				<Tech />
 			</div>
 		</div>
-		<div>
+		<div class="bottom-panels">
 			<Favourites />
 			<Media />
 		</div>
@@ -27,18 +27,20 @@
 </div>
 
 <style>
+	.about-container {
+		width: 100%;
+	}
 	a {
 		margin-top: 10px;
 		font-size: clamp(12px, 2vw, 25px);
 		display: flex;
-		width: 80%;
+		width: 100%;
+		text-decoration: none;
 		color: var(--accent);
-
-		align-items: flex-start;
-		justify-content: flex-start;
+		align-items: center;
+		justify-content: center;
 	}
 	img {
-		margin-left: 15px;
 		width: clamp(55px, 15vw, 205px);
 		height: clamp(55px, 15vw, 205px);
 		border-radius: 100%;
@@ -46,29 +48,33 @@
 
 	.upper-panels {
 		display: flex;
-	}
-
-	.about-container {
-		display: flex;
-		height: 90%;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		gap: 4rem;
+		width: 100%;
+		margin-top: 2rem;
 	}
 
-	.panels {
+	.left,
+	.middle,
+	.right {
+		flex: 1;
+		max-width: 350px;
 		display: flex;
-		width: 90%;
+		justify-content: center;
 		flex-direction: column;
-		justify-content: space-around;
 		align-items: center;
+		text-align: left;
 	}
 
-	.left-panel {
-		width: 50%;
+	.middle img {
+		margin: 0 auto;
+	}
+
+	.bottom-panels {
 		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 100%;
 	}
 </style>

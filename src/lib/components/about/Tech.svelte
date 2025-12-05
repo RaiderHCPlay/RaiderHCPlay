@@ -2,7 +2,6 @@
 	import Loading from '../global/Loading.svelte';
 
 	let accent = '';
-	let previousCategory = '';
 
 	async function getTech() {
 		accent = getComputedStyle(document.documentElement)

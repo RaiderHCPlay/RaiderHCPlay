@@ -1,5 +1,5 @@
 <div class="favourites-container">
-	<h1>Favourites</h1>
+	<h2>Favourites</h2>
 	<div class="favourites-content">
 		<div class="favourite">
 			<h3>Language</h3>
@@ -92,18 +92,26 @@
 <style>
 	.favourites-container {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 		align-items: flex-start;
 		flex-direction: column;
 	}
 
 	.favourites-content {
 		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 30px;
 	}
 	.favourite {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.tenor-gif-embed {
+		width: 60px;
+		height: 60px;
 	}
 </style>
