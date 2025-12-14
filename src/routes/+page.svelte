@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Spotify from '$lib/components/home/Spotify.svelte';
-	import Moon from '$lib/components/home/Moon.svelte';
 </script>
 
 <div class="home-wrapper">
@@ -17,7 +16,6 @@
 		</div>
 		<div class="other-container">
 			<Spotify />
-			<Moon />
 		</div>
 	</div>
 </div>

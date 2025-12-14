@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Footer from '$lib/components/global/Footer.svelte';
+	import Moon from '$lib/components/home/Moon.svelte';
 	import { dev } from '$app/environment';
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
@@ -63,6 +64,9 @@
 	</script>
 </svelte:head>
 
+<div class="moon-wrapper">
+	<Moon />
+</div>
 {@render children?.()}
 <Footer />
 
@@ -136,5 +140,16 @@
 	}
 	:global(html) {
 		height: 100%;
+	}
+
+	.moon-wrapper {
+		position: absolute;
+		left: 45px;
+		top: 20px;
+
+		@media screen and (max-width: 310px) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 </style>

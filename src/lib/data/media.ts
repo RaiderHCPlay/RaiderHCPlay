@@ -1,0 +1,20 @@
+export const media = [
+	{
+		url: 'https://discord.com/users/483660439633395724',
+		icon: 'https://cdn.simpleicons.org/discord',
+
+		name: 'Discord'
+	},
+	{
+		url: 'https://github.com/RaiderHCPlay',
+		icon: 'https://cdn.simpleicons.org/github',
+
+		name: 'GitHub'
+	},
+	{
+		url: 'https://wakatime.com/@RaiderHCPlay',
+		icon: 'https://cdn.simpleicons.org/wakatime',
+
+		name: 'Wakatime'
+	}
+];

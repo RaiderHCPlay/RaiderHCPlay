@@ -95,7 +95,7 @@
 		align-items: center;
 		padding-top: 15px;
 
-		@media screen and (max-width: 700px) {
+		@media screen and (max-width: 310px) {
 			flex-direction: column;
 		}
 	}
@@ -117,5 +117,6 @@
 	h3 {
 		font-size: clamp(12px, 2vw, 16px);
 		margin: 5px 0 0 0;
+		font-weight: normal;
 	}
 </style>
