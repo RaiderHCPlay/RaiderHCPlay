@@ -15,11 +15,11 @@
 <style>
 	.about-container {
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 		text-align: left;
 		flex-direction: column;
 
-		@media screen and (max-width: 310px) {
+		@media screen and (max-width: 600px) {
 			text-align: center;
 		}
 	}

@@ -47,7 +47,7 @@
 		width: 100%;
 		margin-top: 2rem;
 		padding-top: 80px;
-
+		flex-wrap: wrap;
 		@media screen and (max-width: 310px) {
 			padding-top: 150px;
 		}
@@ -57,7 +57,7 @@
 	.right {
 		max-width: 550px;
 		display: flex;
-		flex-wrap: wrap;
+
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
