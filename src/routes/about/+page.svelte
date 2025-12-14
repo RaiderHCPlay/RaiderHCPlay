@@ -57,7 +57,8 @@
 	.right {
 		max-width: 550px;
 		display: flex;
-
+		padding-left: 15px;
+		padding-right: 15px;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
