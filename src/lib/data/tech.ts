@@ -20,11 +20,6 @@ export const tech = [
 		category: 'framework'
 	},
 	{
-		name: 'Sass',
-		icon: 'https://cdn.simpleicons.org/sass',
-		category: 'language'
-	},
-	{
 		name: 'Tailwind',
 		icon: 'https://cdn.simpleicons.org/tailwindcss',
 		category: 'framework'

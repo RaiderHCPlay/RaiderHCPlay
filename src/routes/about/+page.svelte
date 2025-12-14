@@ -7,8 +7,6 @@
 
 <div class="about-container">
 	<div>
-		<a href="/">cd ..</a>
-
 		<div class="upper-panels">
 			<div class="left">
 				<About />
@@ -35,14 +33,10 @@
 	}
 
 	a {
-		padding-top: 30px;
-		font-size: clamp(12px, 2vw, 25px);
-		display: flex;
+		font-size: clamp(20px, 2vw, 25px);
 		width: 100%;
 		text-decoration: none;
 		color: var(--accent);
-		align-items: center;
-		justify-content: center;
 	}
 
 	.upper-panels {
@@ -52,13 +46,18 @@
 		gap: 4rem;
 		width: 100%;
 		margin-top: 2rem;
-		flex-wrap: wrap;
+		padding-top: 80px;
+
+		@media screen and (max-width: 310px) {
+			padding-top: 150px;
+		}
 	}
 
 	.left,
 	.right {
 		max-width: 550px;
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;

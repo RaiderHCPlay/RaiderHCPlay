@@ -18,6 +18,10 @@
 		justify-content: start;
 		text-align: left;
 		flex-direction: column;
+
+		@media screen and (max-width: 310px) {
+			text-align: center;
+		}
 	}
 
 	h2 {
