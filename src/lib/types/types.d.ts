@@ -26,22 +26,6 @@ interface Media {
 	name: string;
 }
 
-interface WakatimeData {
-	color: string;
-	decimal: string;
-	digital: string;
-	hours: number;
-	minutes: number;
-	name: string;
-	percent: number;
-	text: string;
-	total_seconds: number;
-}
-
-interface WakatimeLangs {
-	data: WakatimeData[];
-}
-
 interface Artists {
 	external_urls: {
 		spotify: string;

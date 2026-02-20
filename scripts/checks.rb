@@ -17,19 +17,19 @@ $success = 0;
 checks = [
   {
     'name' => "Prettier",
-    'command' => "pnpm prettier --check .",
+    'command' => "bun run format:check",
   },
   {
     'name' => "ESLint",
-    'command' => "pnpm eslint .",
+    'command' => "bun run lint",
   },
   {
     'name' => "Svelte",
-    'command' => "pnpm check",
+    'command' => "bun run check",
   },
   {
     'name' => 'Build',
-    'command' => "pnpm build"
+    'command' => "bun run build"
   }
 ]
 

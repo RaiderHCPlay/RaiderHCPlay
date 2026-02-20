@@ -1,44 +1,31 @@
-import getAccessToken from '$lib/server/getAccessToken';
-import { json } from '@sveltejs/kit';
-
-let accessToken: string | null;
-let expiration: number | null = null;
-
-async function checkAccessToken() {
-	if (!accessToken || Date.now() >= (expiration || 0)) {
-		const data = await getAccessToken();
-		accessToken = data.access_token;
-		expiration = Date.now() + data.expires_in * 1000;
-	}
-	return accessToken;
-}
+import { getCache } from '$lib/server/spotifyCache';
 
 export async function GET() {
-	const token = await checkAccessToken();
-	const result = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
-		method: 'GET',
-		headers: { Authorization: `Bearer ${token}` }
+	const encoder = new TextEncoder();
+
+	const stream = new ReadableStream({
+		start(controller) {
+			const send = () => {
+				const cache = getCache();
+				controller.enqueue(encoder.encode(`data: ${JSON.stringify(cache)}\n\n`));
+			};
+
+			send();
+
+			const interval = setInterval(send, 5000);
+
+			return () => {
+				clearInterval(interval);
+			};
+		}
 	});
 
-	if (result.status === 204) {
-		return json({ isPlaying: false });
-	}
-
-	const data = await result.json();
-
-	if (!data || !data.item) {
-		return json({ isPlaying: false });
-	}
-
-	const track = data.item;
-	return json(
-		{
-			isPlaying: data.is_playing,
-			title: track.name,
-			artist: track.artists.map((a: Artists) => a.name).join(', '),
-			albumImageUrl: track.album.images[0]?.url,
-			trackUrl: track.external_urls.spotify
-		},
-		{ status: 200 }
-	);
+	return new Response(stream, {
+		headers: {
+			'Content-Type': 'text/event-stream',
+			'Cache-Control': 'no-cache',
+			'X-Accel-Buffering': 'no',
+			Connection: 'keep-alive'
+		}
+	});
 }
