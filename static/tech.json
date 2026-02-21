@@ -14,17 +14,7 @@
     "icon": "https://cdn.simpleicons.org/react",
     "category": "framework"
   },
-  {
-    "name": "Next.js",
-    "icon": "https://cdn.simpleicons.org/next.js",
-    "category": "framework"
-  },
-  {
-    "name": "Sass",
-    "icon": "https://cdn.simpleicons.org/sass",
-    "category": "language"
-  },
-  {
+    {
     "name": "Tailwind",
     "icon": "https://cdn.simpleicons.org/tailwindcss",
     "category": "framework"
@@ -40,8 +30,8 @@
     "category": "framework"
   },
   {
-    "name": "Rust",
-    "icon": "https://cdn.simpleicons.org/rust",
+    "name": "Zig",
+    "icon": "https://cdn.simpleicons.org/zig",
     "category": "exploring"
   }
 ]

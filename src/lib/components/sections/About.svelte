@@ -16,8 +16,9 @@
     Hi! I'm Paweł (AKA RaiderHCPlay). I'm a developer. My focus is on building good software that
     would be useful for at least a few people on this world. I mainly do stuff in the browser but
     I'm trying to also explore area outside of it thanks to Zig. For everyday I'm a student and a
-    collector of stuff from my favourite franchises. I like playing video games, listening to music,
-    watching movies and anime, looking at the moon (especially when it's full) and reading mangas.
+    collector of stuff from my favourite franchises. I like programming (of course), playing video
+    games, listening to music, watching movies and anime, looking at the moon (especially when it's
+    full) and reading mangas.
   </article>
 
   <div>

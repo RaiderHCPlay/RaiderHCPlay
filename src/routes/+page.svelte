@@ -4,11 +4,9 @@
   let { data } = $props();
 </script>
 
-<div class="bg-(--base) h-full w-full">
-  <div class="flex flex-col justify-center items-center">
-    <h1 class="text-(--accent) text-[clamp(35px, 3vw, 85px)] mb-2.5">RaiderHCPlay</h1>
-    <h2 class="text-(--accent) text-[clamp(15px, 2vw, 25px)]">Just a developer</h2>
-    <Spotify data={data.initialSpotify} />
-  </div>
-  <About />
+<div class="h-[90%] text-center flex flex-col justify-center items-center">
+  <h1 class="text-(--accent) text-3xl sm:text-5xl mb-2">RaiderHCPlay</h1>
+  <h2 class="text-(--accent) text-lg sm:text-2xl">Just a developer</h2>
+  <Spotify data={data.initialSpotify} />
 </div>
+<About />

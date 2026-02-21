@@ -28,7 +28,7 @@ File.write("./README.md", <<~HEREDOC
   ### Something About Me
 
   Hey, I’m Paweł (aka RaiderHCPlay).  
-  I'm a web developer and a collector, always ready to learn new things. 
+  I'm a developer, always ready to learn new things. 
     
   <p align="left">
     <img src="https://img.shields.io/badge/Editor-Neovim-57A143?logo=neovim&logoColor=white" />

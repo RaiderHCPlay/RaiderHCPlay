@@ -3,10 +3,12 @@
   import { dev } from '$app/environment';
   import { injectAnalytics } from '@vercel/analytics/sveltekit';
   import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+  import { init } from '$lib/data/theme';
 
-  let { children } = $props();
+  let { data, children } = $props();
   import '../app.css';
 
+  init();
   injectSpeedInsights();
   injectAnalytics({ mode: dev ? 'development' : 'production' });
 </script>
@@ -43,7 +45,7 @@
       "name": "RaiderHCPlay",
       "url": "https://raiderhcplay.vercel.app/",
       "image": "https://avatars.githubusercontent.com/u/170134946?v=4",
-      "description": "Dev portfolio of RaiderHCPlay - a student and a web developer",
+      "description": "Dev portfolio of RaiderHCPlay - a student and a developer",
       "sameAs": ["https://github.com/RaiderHCPlay", "https://wakatime.com/@RaiderHCPlay"]
     }
   </script>
@@ -57,16 +59,15 @@
   <script type="text/javascript">
     (() => {
       const theme = localStorage.getItem('raiderhcplay-website-theme') || 'normal';
-      document.documentElement.removeAttribute('data-theme');
-      document.documentElement.setAttribute('data-theme', theme);
-      localStorage.setItem('raiderhcplay-website-theme', theme);
+      document.documentElement.dataset.theme = theme;
     })();
   </script>
+
   <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 </svelte:head>
 
 <div class="moon-wrapper">
-  <Moon />
+  <Moon data={data.moon} />
 </div>
 {@render children?.()}
 
@@ -75,62 +76,68 @@
     --accent: #46d8f8;
     --accent2: #0a30f9;
 
-    --base: #070d16;
-    --text: #e5eef9;
+    --base: #050912;
+    --text: #e6f1ff;
 
-    --subtext0: #d3d8de;
-    --subtext1: #89a3be;
+    --subtext0: #c6d6e6;
+    --subtext1: #7f9bb8;
 
-    --crust: #03020b;
-    --mantle: #081656;
+    --crust: #02040a;
+    --mantle: #0a1224;
 
-    --surface0: #2d6388;
-    --surface1: #3a537e;
-    --surface2: #4a95bb;
+    --surface0: #0f1c33;
+    --surface1: #132445;
+    --surface2: #18305c;
 
-    --overlay0: #171f2b;
-    --overlay1: #274a77;
-    --overlay2: #7a93ad;
+    --overlay0: #1c2a44;
+    --overlay1: #24365a;
+    --overlay2: #2e4572;
 
-    --pink: #ac5c78;
-    --purple: #716998;
-    --sapphire: #11acf0;
+    --pink: #c85f7a;
+    --purple: #6f6bd6;
+    --sapphire: #19bfff;
 
-    --yellow: #e6d163;
-    --peach: #e89a7a;
-    --green: #68c792;
+    --yellow: #f0d96b;
+    --peach: #f29a7f;
+    --green: #5ed39c;
     --blue: #0a30f9;
 
-    --red: #bc5570;
+    --red: #d2556a;
     --black: #000000;
   }
-
   :global([data-theme='moon']) {
     --accent: #81cb1e;
     --accent2: #e4fd32;
-    --base: #0a0e1a;
-    --text: #d3e7f7;
-    --subtext0: #b7c9db;
-    --subtext1: #91a0b5;
-    --crust: #04070c;
-    --mantle: #0c111a;
-    --surface0: #182133;
-    --surface1: #222d44;
-    --surface2: #2c3752;
-    --overlay0: #374363;
-    --overlay1: #415075;
-    --overlay2: #4c5d88;
-    --pink: #d35c9e;
-    --purple: #8c7cf0;
-    --sapphire: #5bff8f;
-    --yellow: #e6d163;
-    --peach: #e89a7a;
-    --green: #68c792;
-    --blue: #2a7dd3;
-    --red: #e04f5f;
-    --black: #05070b;
-  }
 
+    --base: #070d1f;
+    --text: #e4f4ff;
+
+    --subtext0: #c5daee;
+    --subtext1: #9bb4cc;
+
+    --crust: #030712;
+    --mantle: #0f1a33;
+
+    --surface0: #14264a;
+    --surface1: #1b3270;
+    --surface2: #224092;
+
+    --overlay0: #2b4fa3;
+    --overlay1: #3a63c7;
+    --overlay2: #4a7dff;
+
+    --pink: #ff6fb4;
+    --purple: #9a86ff;
+    --sapphire: #5bff8f;
+
+    --yellow: #f5e97a;
+    --peach: #ffb19a;
+    --green: #6cf7b2;
+    --blue: #2a7dd3;
+
+    --red: #ff5e6c;
+    --black: #040812;
+  }
   :global(body) {
     width: 100%;
     height: 100%;
@@ -138,6 +145,8 @@
   }
   :global(html) {
     height: 100%;
+    background-color: var(--base);
+    overscroll-behavior: none;
   }
 
   .moon-wrapper {
