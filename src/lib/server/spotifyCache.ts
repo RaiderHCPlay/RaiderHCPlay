@@ -1,11 +1,22 @@
 import { getSpotifyData } from './getSpotifyData';
 
 let cache: SpotifyData | null = null;
+let lastUpdate = 0;
 
-setInterval(async () => {
-	const newData: SpotifyData | null = await getSpotifyData();
+export const getCache = async () => {
+  const now = Date.now();
+  if (!cache) {
+    cache = await getSpotifyData();
+    lastUpdate = Date.now();
+    return cache;
+  }
 
-	if (newData) cache = newData;
-}, 3000);
+  if (now - lastUpdate > 5000) {
+    lastUpdate = now;
+    getSpotifyData().then((newData) => {
+      cache = newData;
+    });
+  }
 
-export const getCache = () => cache;
+  return cache;
+};

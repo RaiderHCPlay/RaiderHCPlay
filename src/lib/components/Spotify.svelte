@@ -49,7 +49,7 @@
       </g></svg
     >
     {#if spotify?.error || !spotify?.isPlaying}
-      <h1 class="ml-3.75 ml:[38px]">Nothing playing right now</h1>
+      <h1 class="ml-3.75">Nothing playing right now</h1>
     {:else if spotify?.isPlaying}
       <img
         class="sm:ml-3 sm:mt-0 ml-0 mt-2.5"

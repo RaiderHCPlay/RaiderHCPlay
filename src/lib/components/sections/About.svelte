@@ -44,17 +44,21 @@
   ];
 </script>
 
-<div class="text-(--text) bg-(--crust) text-center pb-7">
+<div class="text-(--text) bg-(--crust) text-center pb-7 font-bold">
   <h1 class="text-3xl sm:text-5xl text-(--accent) mt-3 pt-7">Something about me</h1>
   <div class="mt-14 flex justify-evenly items-start">
-    <article class="w-[40%]">
-      Hi! I'm Paweł (AKA RaiderHCPlay). I'm a developer. My focus is on building good software that
-      would be useful for at least a few people on this world. I mainly do stuff in the browser but
-      I'm trying to also explore area outside of it thanks to Zig. For everyday I'm a student and a
-      collector of stuff from my favourite franchises. I like programming (of course), playing video
-      games, listening to music, watching movies and anime, looking at the moon (especially when
-      it's full) and reading mangas.
-    </article>
+    <div class="flex flex-col justify-center items-center w-[40%]">
+      <h2 class="text-lg sm:text-2xl text-(--accent) mb-2">Some words</h2>
+
+      <article>
+        Hi! I'm Paweł (AKA RaiderHCPlay). I'm a developer. My focus is on building good software
+        that would be useful for at least a few people on this world. I mainly do stuff in the
+        browser but I'm trying to also explore area outside of it thanks to Zig. For everyday I'm a
+        student and a collector of stuff from my favourite franchises. I like programming (of
+        course), playing video games, listening to music, watching movies and anime, looking at the
+        moon (especially when it's full) and reading mangas.
+      </article>
+    </div>
     <div class="flex flex-col justify-center items-center">
       <div>
         <h2 class="text-lg sm:text-2xl text-(--accent)">Some of my favourites</h2>

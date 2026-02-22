@@ -66,7 +66,7 @@
   <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 </svelte:head>
 
-<div class="moon-wrapper">
+<div class="absolute left-[45px] top-[20px] max-[310px]:left-1/2 max-[310px]:-translate-x-1/2">
   <Moon data={data.moon} />
 </div>
 {@render children?.()}
@@ -147,16 +147,5 @@
     height: 100%;
     background-color: var(--base);
     overscroll-behavior: none;
-  }
-
-  .moon-wrapper {
-    position: absolute;
-    left: 45px;
-    top: 20px;
-
-    @media screen and (max-width: 310px) {
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
 </style>
