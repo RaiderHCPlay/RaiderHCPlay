@@ -1,7 +1,7 @@
 import { getCache } from '$lib/server/spotifyCache';
 
-export const load = () => {
+export const load = async () => {
   return {
-    initialSpotify: getCache()
+    initialSpotify: await getCache()
   };
 };

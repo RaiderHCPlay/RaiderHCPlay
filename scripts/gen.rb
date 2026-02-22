@@ -54,3 +54,11 @@ File.write("./README.md", <<~HEREDOC
 )
 
 puts "Generated README"
+
+File.write('./src/lib/data/tech.ts', <<~DOC
+  export const tech = #{JSON.pretty_generate(tech)};
+  
+DOC
+)
+
+puts "Generated tech.ts"

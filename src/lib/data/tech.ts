@@ -5,13 +5,8 @@ export const tech = [
     category: 'language'
   },
   {
-    name: 'React',
+    name: 'React Native',
     icon: 'https://cdn.simpleicons.org/react',
-    category: 'framework'
-  },
-  {
-    name: 'Next.js',
-    icon: 'https://cdn.simpleicons.org/next.js',
     category: 'framework'
   },
   {
@@ -27,6 +22,11 @@ export const tech = [
   {
     name: 'SvelteKit',
     icon: 'https://cdn.simpleicons.org/svelte',
+    category: 'framework'
+  },
+  {
+    name: 'Nuxt',
+    icon: 'https://cdn.simpleicons.org/nuxt',
     category: 'framework'
   },
   {

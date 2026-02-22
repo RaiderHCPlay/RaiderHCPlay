@@ -13,7 +13,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
-    "gen:readme": "ruby ./scripts/gen_readme.rb",
+    "gen": "ruby ./scripts/gen.rb",
     "run:checks": "ruby ./scripts/checks.rb"
   },
   "devDependencies": {

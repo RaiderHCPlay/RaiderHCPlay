@@ -1,16 +1,11 @@
 [
   {
-    "name": "JavaScript",
-    "icon": "https://cdn.simpleicons.org/javascript",
-    "category": "language"
-  },
-  {
     "name": "TypeScript",
     "icon": "https://cdn.simpleicons.org/typescript",
     "category": "language"
   },
   {
-    "name": "React",
+    "name": "React Native",
     "icon": "https://cdn.simpleicons.org/react",
     "category": "framework"
   },
@@ -29,6 +24,11 @@
     "icon": "https://cdn.simpleicons.org/svelte",
     "category": "framework"
   },
+	{
+		"name": "Nuxt",
+		"icon": "https://cdn.simpleicons.org/nuxt",
+		"category": "framework"
+	},
   {
     "name": "Zig",
     "icon": "https://cdn.simpleicons.org/zig",

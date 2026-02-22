@@ -1,31 +1,7 @@
 import { getCache } from '$lib/server/spotifyCache';
+import { json } from '@sveltejs/kit';
 
 export async function GET() {
-  const encoder = new TextEncoder();
-
-  const stream = new ReadableStream({
-    start(controller) {
-      const send = () => {
-        const cache = getCache();
-        controller.enqueue(encoder.encode(`data: ${JSON.stringify(cache)}\n\n`));
-      };
-
-      send();
-
-      const interval = setInterval(send, 5000);
-
-      return () => {
-        clearInterval(interval);
-      };
-    }
-  });
-
-  return new Response(stream, {
-    headers: {
-      'Content-Type': 'text/event-stream',
-      'Cache-Control': 'no-cache',
-      'X-Accel-Buffering': 'no',
-      Connection: 'keep-alive'
-    }
-  });
+  const cache = await getCache();
+  return json(cache);
 }

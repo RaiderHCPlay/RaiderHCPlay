@@ -1,19 +1,25 @@
 <script lang="ts">
-  import { spotifyState, init } from '$lib/states/spotify.svelte';
   import { onMount } from 'svelte';
   let { data } = $props();
 
+  let spotify = $state(data);
+
   onMount(() => {
-    init(data);
+    const interval = setInterval(async () => {
+      const response = await fetch('/api/spotify/playing');
+      if (response.ok) {
+        spotify = await response.json();
+      }
+    }, 5000);
+    return () => clearInterval(interval);
   });
 
   function truncate(text: string) {
+    if (!text) return '';
     text = text.normalize();
 
     return text.length > 35 ? text.substring(0, 35) + '...' : text;
   }
-
-  let spotify = $derived(spotifyState.data ?? data);
 </script>
 
 <div class="text-(--text)">

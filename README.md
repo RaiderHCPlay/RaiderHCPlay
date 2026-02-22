@@ -3,7 +3,7 @@
 ### Something About Me
 
 Hey, I’m Paweł (aka RaiderHCPlay).  
- I'm a web developer and a collector, always ready to learn new things.
+ I'm a developer, always ready to learn new things.
 
   <p align="left">
     <img src="https://img.shields.io/badge/Editor-Neovim-57A143?logo=neovim&logoColor=white" />
@@ -26,7 +26,7 @@ Hey, I’m Paweł (aka RaiderHCPlay).
 
 ### Tech Stack
 
-<img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react" alt="React" width="40" height="40"> <img src="https://cdn.simpleicons.org/next.js" alt="Next.js" width="40" height="40"> <img src="https://cdn.simpleicons.org/sass" alt="Sass" width="40" height="40"> <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind" width="40" height="40"> <img src="https://cdn.simpleicons.org/svelte" alt="SvelteKit" width="40" height="40">
+<img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react" alt="React Native" width="40" height="40"> <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind" width="40" height="40"> <img src="https://cdn.simpleicons.org/svelte" alt="SvelteKit" width="40" height="40"> <img src="https://cdn.simpleicons.org/nuxt" alt="Nuxt" width="40" height="40">
 
 ---
 

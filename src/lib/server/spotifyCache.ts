@@ -5,13 +5,8 @@ let lastUpdate = 0;
 
 export const getCache = async () => {
   const now = Date.now();
-  if (!cache) {
-    cache = await getSpotifyData();
-    lastUpdate = Date.now();
-    return cache;
-  }
 
-  if (now - lastUpdate > 5000) {
+  if (!cache || now - lastUpdate > 5000) {
     lastUpdate = now;
     getSpotifyData().then((newData) => {
       cache = newData;
