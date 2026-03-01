@@ -7,6 +7,7 @@
 
   let { data, children } = $props();
   import '../app.css';
+  import Footer from '$lib/components/Footer.svelte';
 
   init();
   injectSpeedInsights();
@@ -70,6 +71,7 @@
   <Moon data={data.moon} />
 </div>
 {@render children?.()}
+<Footer />
 
 <style>
   :global([data-theme='normal']) {
