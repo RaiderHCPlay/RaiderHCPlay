@@ -73,8 +73,8 @@
 
 <style>
   :global([data-theme='normal']) {
-    --accent: #46d8f8;
-    --accent2: #0a30f9;
+    --accent2: #46d8f8;
+    --accent: #0a30f9;
 
     --base: #050912;
     --text: #e6f1ff;

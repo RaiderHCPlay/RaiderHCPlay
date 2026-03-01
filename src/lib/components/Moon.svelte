@@ -34,7 +34,7 @@
   {#if data}
     <MoonSVG />
     <div
-      class="ml-[15px] text-center text-(--accent) text-[clamp(12px,2vw,16px)] max-[310px]:ml-0 max-[310px]:mt-4"
+      class="ml-[15px] text-center text-(--accent2) text-[clamp(12px,2vw,16px)] max-[310px]:ml-0 max-[310px]:mt-4"
     >
       <h3 class="mt-[5px] font-normal leading-tight">Moon phase: {data.phase}</h3>
       <h3 class="mt-[5px] font-normal leading-tight">

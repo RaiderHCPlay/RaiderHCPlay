@@ -39,9 +39,9 @@
         id="SVGRepo_tracerCarrier"
         stroke-linecap="round"
         stroke-linejoin="round"
-      ></g><g class="fill-(--accent)" id="SVGRepo_iconCarrier">
+      ></g><g class="fill-(--accent2)" id="SVGRepo_iconCarrier">
         <title>spotify [#79d6fc]</title> <desc>Created with Sketch.</desc> <defs> </defs>
-        <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd" class="fill-(--accent)">
+        <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd" class="fill-(--accent2)">
           <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7479.000000)">
             <g id="icons" transform="translate(56.000000, 160.000000)">
               <path

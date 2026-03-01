@@ -1,12 +1,12 @@
 <script lang="ts">
   import { media } from '$lib/data/media';
 
-  let accent = $state('');
+  let accent2 = $state('');
 
   $effect(() => {
     const style = getComputedStyle(document.documentElement);
 
-    accent = style.getPropertyValue('--accent').trim().replace('#', '');
+    accent2 = style.getPropertyValue('--accent2').trim().replace('#', '');
   });
 
   const gifs = [
@@ -44,11 +44,11 @@
   ];
 </script>
 
-<div class="text-(--text) bg-(--crust) text-center pb-7 font-bold">
-  <h1 class="text-3xl sm:text-5xl text-(--accent) mt-3 pt-7">Something about me</h1>
-  <div class="mt-14 flex justify-evenly items-start">
-    <div class="flex flex-col justify-center items-center w-[40%]">
-      <h2 class="text-lg sm:text-2xl text-(--accent) mb-2">Some words</h2>
+<div class="text-(--text) bg-(--crust) text-center pb-7">
+  <h1 class="text-3xl sm:text-5xl text-(--accent2) mt-3 pt-7">Something about me</h1>
+  <div class="mt-14 flex justify-evenly items-start flex-col gap-6 sm:flex-row">
+    <div class="flex flex-col justify-center items-center w-full sm:w-[40%]">
+      <h2 class="text-lg sm:text-2xl text-(--accent2) mb-2">Some words</h2>
 
       <article>
         Hi! I'm Paweł (AKA RaiderHCPlay). I'm a developer. My focus is on building good software
@@ -59,9 +59,9 @@
         moon (especially when it's full) and reading mangas.
       </article>
     </div>
-    <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center w-full sm:w-[40%]">
       <div>
-        <h2 class="text-lg sm:text-2xl text-(--accent)">Some of my favourites</h2>
+        <h2 class="text-lg sm:text-2xl text-(--accent2)">Some of my favourites</h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 text-center p-6 gap-3">
           {#each gifs as gif (gif.name)}
@@ -83,12 +83,12 @@
           {/each}
         </div>
       </div>
-      <div class="w-[50%]">
-        <h1 class="text-lg sm:text-2xl text-(--accent) mb-2.5">Media</h1>
+      <div class="w-full sm:w-[50%]">
+        <h1 class="text-lg sm:text-2xl text-(--accent2) mb-2.5">Media</h1>
         <div class="flex justify-evenly items-center">
           {#each media as media (media.name)}
             <a href={`${media.url}`} target="_blank">
-              <img class="w-14 h-14" src={`${media.icon}/${accent}`} alt={`${media.name} logo`} />
+              <img class="w-14 h-14" src={`${media.icon}/${accent2}`} alt={`${media.name} logo`} />
             </a>
           {/each}
         </div>
