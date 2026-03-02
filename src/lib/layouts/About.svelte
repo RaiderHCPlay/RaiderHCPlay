@@ -12,13 +12,13 @@
   const gifs = [
     {
       name: 'Franchise',
-      postId: '22294707',
-      ratio: '1.15942',
-      a1Link: 'https://tenor.com/view/dead-space-gif-22294707',
-      a1Text: 'Dead Space GIF',
-      a2Link: 'https://tenor.com/search/dead+space-gifs',
+      postId: '4719372935125368569',
+      ratio: '1',
+      a1Link: 'https://tenor.com/view/doom-slayer-doom-goku-meme-prowler-gif-4719372935125368569',
+      a1Text: 'Doom Slayer Goku GIF',
+      a2Link: 'https://tenor.com/search/doom+slayer-gifs',
       a2Text: 'Dead Space GIFs',
-      para: 'Dead Space'
+      para: 'DOOM'
     },
     {
       name: 'Manga/Anime',

@@ -76,7 +76,7 @@
 <style>
   :global([data-theme='normal']) {
     --accent2: #46d8f8;
-    --accent: #0a30f9;
+    --accent: #2a7dd3;
 
     --base: #050912;
     --text: #e6f1ff;

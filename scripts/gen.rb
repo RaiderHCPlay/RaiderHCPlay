@@ -33,8 +33,7 @@ File.write("./README.md", <<~HEREDOC
   <p align="left">
     <img src="https://img.shields.io/badge/Editor-Neovim-57A143?logo=neovim&logoColor=white" />
     <img src="https://img.shields.io/badge/Svelte%20Enjoyer-F73C00?logo=svelte&logoColor=white" />
-    <img src="https://img.shields.io/badge/Zig%20Explorer-e6d163?logo=zig&logoColor=white" />
-    <img src="https://img.shields.io/badge/JJBA%20Crusader-c765be?logo=joplin&logoColor=white" />
+    <img src="https://img.shields.io/badge/Zig%20Explorer-f7a41d?logo=zig&logoColor=white" />    <img src="https://img.shields.io/badge/JJBA%20Crusader-c765be?logo=joplin&logoColor=white" />
   </p>
 
   ***
