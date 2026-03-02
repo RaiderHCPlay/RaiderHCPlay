@@ -1,20 +1,6 @@
-<div class="not-found">
-	Sorry, but this route doesn't exist. <a href="/">cd /home</a>
+<div class="w-full h-full bg-(--base) text-(--text)">
+  <div class="flex flex-col justify-center items-center">
+    <h1>Why did you enter this route</h1>
+    <a href="/">Go back</a>
+  </div>
 </div>
-
-<style>
-	div {
-		display: flex;
-		height: 90%;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-	}
-	a {
-		margin-top: 10px;
-		font-size: clamp(12px, 2vw, 16px);
-		color: var(--accent);
-		text-decoration: none;
-	}
-</style>
