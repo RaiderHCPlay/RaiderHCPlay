@@ -8,17 +8,17 @@
 
     accent2 = style.getPropertyValue('--accent2').trim().replace('#', '');
   });
-
   const gifs = [
     {
       name: 'Franchise',
-      postId: '4719372935125368569',
+      postId: '2955819106363915585',
       ratio: '1',
-      a1Link: 'https://tenor.com/view/doom-slayer-doom-goku-meme-prowler-gif-4719372935125368569',
-      a1Text: 'Doom Slayer Goku GIF',
-      a2Link: 'https://tenor.com/search/doom+slayer-gifs',
-      a2Text: 'Dead Space GIFs',
-      para: 'DOOM'
+      a1Link:
+        'https://tenor.com/view/absolute-cinema-leon-kennedy-tachinwit-gif-2955819106363915585',
+      a1Text: 'Absolute Cinema Leon Kennedy Meme',
+      a2Link: 'https://tenor.com/search/absolute+cinema-memes',
+      a2Text: 'Absolute Cinema Memes',
+      para: 'Resident Evil'
     },
     {
       name: 'Manga/Anime',
