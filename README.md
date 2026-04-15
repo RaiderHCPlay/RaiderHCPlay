@@ -21,7 +21,10 @@
 <span>- <a href="https://github.com/sveltejs/svelte.dev" target="_blank">`sveltejs/svelte.dev`</a> Contributed small fixes to the svelte.dev website </span>
   ***
   ### Tech Stack
-  <img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" width="40" height="40"> <img src="https://cdn.simpleicons.org/react" alt="React Native" width="40" height="40"> <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind" width="40" height="40"> <img src="https://cdn.simpleicons.org/svelte" alt="SvelteKit" width="40" height="40"> <img src="https://cdn.simpleicons.org/nuxt" alt="Nuxt" width="40" height="40">
+  <p align="left">
+    <img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" width="40"> <img src="https://cdn.simpleicons.org/react" alt="React Native" width="40"> <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind" width="40"> <img src="https://cdn.simpleicons.org/svelte" alt="SvelteKit" width="40"> <img src="https://cdn.simpleicons.org/nuxt" alt="Nuxt" width="40">
+  </p>
+
   ***
 
   ### Media

@@ -18,7 +18,7 @@ end
 
 tech.each do |icon|
   if icon["category"] == "language" or icon["category"] == "framework"
-    tech_array.push("<img src=\"#{icon['icon']}\" alt=\"#{icon['name']}\" width=\"40\" height=\"40\">")
+    tech_array.push("<img src=\"#{icon['icon']}\" alt=\"#{icon['name']}\" width=\"40\">")
   end
 end
 
@@ -42,7 +42,10 @@ File.write("./README.md", <<~HEREDOC
   #{projects_array.join("\n\n")}
   ***
   ### Tech Stack
-  #{tech_array.join(" ")}
+  <p align="left">
+    #{tech_array.join(" ")}
+  </p>
+
   ***
 
   ### Media
