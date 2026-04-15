@@ -22,7 +22,7 @@
   ***
   ### Tech Stack
   <p align="left">
-    <img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" width="40"> <img src="https://cdn.simpleicons.org/react" alt="React Native" width="40"> <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind" width="40"> <img src="https://cdn.simpleicons.org/svelte" alt="SvelteKit" width="40"> <img src="https://cdn.simpleicons.org/nuxt" alt="Nuxt" width="40">
+    <img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" width="40"> <img src="https://cdn.simpleicons.org/react" alt="React Native" width="40"> <img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind" width="40"> <img src="https://cdn.simpleicons.org/svelte" alt="SvelteKit" width="40">
   </p>
 
   ***

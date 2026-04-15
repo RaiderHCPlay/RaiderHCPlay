@@ -27,7 +27,7 @@ export const tech = [
   {
     "name": "Nuxt",
     "icon": "https://cdn.simpleicons.org/nuxt",
-    "category": "framework"
+    "category": "exploring"
   },
   {
     "name": "Zig",
