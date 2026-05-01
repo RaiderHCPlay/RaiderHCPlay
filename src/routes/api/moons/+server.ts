@@ -1,32 +1,35 @@
-import { getCurrentMoonAge } from '$lib/server/getCurrentMoonAge';
+import getMoonData from '$lib/server/getMoonInfo';
 
 export async function GET() {
-  const age = getCurrentMoonAge();
+  const { age, phase, illumination, isWaxing } = getMoonData();
+  let phaseName: string;
 
-  let phase = '';
   if (age <= 1.845) {
-    phase = 'New Moon';
+    phaseName = 'New Moon';
   } else if (age <= 5.536 && age > 1.845) {
-    phase = 'Waxing Crescent';
+    phaseName = 'Waxing Crescent';
   } else if (age <= 9.228 && age > 5.536) {
-    phase = 'First Quarter';
+    phaseName = 'First Quarter';
   } else if (age <= 12.919 && age > 9.228) {
-    phase = 'Waxing Gibbous';
+    phaseName = 'Waxing Gibbous';
   } else if (age <= 16.61 && age > 12.919) {
-    phase = 'Full Moon';
+    phaseName = 'Full Moon';
   } else if (age <= 20.301 && age > 16.61) {
-    phase = 'Waning Gibbous';
+    phaseName = 'Waning Gibbous';
   } else if (age <= 23.992 && age > 20.301) {
-    phase = 'Last Quarter';
+    phaseName = 'Last Quarter';
   } else if (age <= 29.53 && age > 23.992) {
-    phase = 'Waning Crescent';
+    phaseName = 'Waning Crescent';
   } else {
-    phase = 'New Moon';
+    phaseName = 'New Moon';
   }
 
   const data = JSON.stringify({
+    phaseName: phaseName,
     phase: phase,
-    age: age
+    age: age,
+    illumination: illumination,
+    isWaxing: isWaxing
   });
   return new Response(data, {
     headers: { 'Content-Type': 'application/json' }

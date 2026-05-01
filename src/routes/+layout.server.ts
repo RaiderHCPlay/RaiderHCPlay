@@ -1,7 +1,7 @@
 import type { LayoutServerLoad } from './$types';
 
 export const load: LayoutServerLoad = async ({ fetch }) => {
-  let daysToFullMoon = 0;
+  let daysToFullMoon: number;
 
   const response = await fetch('/api/moons', { method: 'GET' });
   const data = await response.json();

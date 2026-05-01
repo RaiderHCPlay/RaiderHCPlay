@@ -75,70 +75,66 @@
 
 <style>
   :global([data-theme='normal']) {
-    --accent2: #46d8f8;
-    --accent: #2a7dd3;
+    --base: #0a0a0a;
+    --mantle: #050505;
+    --crust: #000000;
 
-    --base: #050912;
-    --text: #e6f1ff;
+    --text: #e0e0e0;
+    --subtext1: #b8b8b8;
+    --subtext0: #a5a5a5;
+    --overlay2: #8c8c8c;
+    --overlay1: #737373;
+    --overlay0: #595959;
+    --surface2: #3d3d3d;
+    --surface1: #2a2a2a;
+    --surface0: #1f1f1f;
 
-    --subtext0: #c6d6e6;
-    --subtext1: #7f9bb8;
-
-    --crust: #02040a;
-    --mantle: #0a1224;
-
-    --surface0: #0f1c33;
-    --surface1: #132445;
-    --surface2: #18305c;
-
-    --overlay0: #1c2a44;
-    --overlay1: #24365a;
-    --overlay2: #2e4572;
-
-    --pink: #c85f7a;
-    --purple: #6f6bd6;
-    --sapphire: #19bfff;
-
-    --yellow: #f0d96b;
-    --peach: #f29a7f;
-    --green: #5ed39c;
-    --blue: #0a30f9;
-
-    --red: #d2556a;
-    --black: #000000;
+    --rosewater: #a0aec0;
+    --flamingo: #a0aec0;
+    --pink: #bc2b2b;
+    --mauve: #a0aec0;
+    --red: #bc2b2b;
+    --maroon: #bc2b2b;
+    --peach: #d4a373;
+    --yellow: #d4a373;
+    --green: #4a6352;
+    --teal: #a0aec0;
+    --sky: #a0aec0;
+    --sapphire: #a0aec0;
+    --blue: #4a5568;
+    --lavender: #a0aec0;
   }
   :global([data-theme='moon']) {
-    --accent: #81cb1e;
-    --accent2: #e4fd32;
+    --base: #050a0e;
+    --mantle: #03070b;
+    --crust: #010305;
 
-    --base: #070d1f;
-    --text: #e4f4ff;
+    --text: #c5f1ff;
+    --subtext1: #82a3ac;
+    --subtext0: #5f7e85;
 
-    --subtext0: #c5daee;
-    --subtext1: #9bb4cc;
+    --surface2: #1a2e33;
+    --surface1: #122126;
+    --surface0: #0d181c;
 
-    --crust: #030712;
-    --mantle: #0f1a33;
+    --overlay2: #2d4f56;
+    --overlay1: #1f363b;
+    --overlay0: #142427;
 
-    --surface0: #14264a;
-    --surface1: #1b3270;
-    --surface2: #224092;
-
-    --overlay0: #2b4fa3;
-    --overlay1: #3a63c7;
-    --overlay2: #4a7dff;
-
-    --pink: #ff6fb4;
-    --purple: #9a86ff;
-    --sapphire: #5bff8f;
-
-    --yellow: #f5e97a;
-    --peach: #ffb19a;
-    --green: #6cf7b2;
-    --blue: #2a7dd3;
-
-    --red: #ff5e6c;
-    --black: #040812;
+    --rosewater: #c5f1ff;
+    --flamingo: #d35c9e;
+    --pink: #d35c9e;
+    --mauve: #e4fd32;
+    --red: #bc2b2b;
+    --maroon: #e04f5f;
+    --peach: #d4a373;
+    --yellow: #e4fd32;
+    --green: #81cb1e;
+    --teal: #5bff8f;
+    --sky: #3df3ff;
+    --sapphire: #00d2ff;
+    --blue: #1e66c2;
+    --lavender: #a0aec0;
   }
   :global(body) {
     width: 100%;

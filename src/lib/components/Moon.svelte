@@ -1,58 +1,47 @@
-<script lang="ts">
-  import {
-    FullMoon,
-    LastQuarterMoon,
-    NewMoon,
-    WaningGibbousMoon,
-    WaxingGibbousMoon,
-    WaningCrescentMoon,
-    WaxingCrescentMoon,
-    FirstQuarterMoon
-  } from '$lib/components/moons';
-  import { setTheme } from '$lib/data/theme';
-  let moons = [
-    { name: 'Full Moon', component: FullMoon },
-    { name: 'Last Quarter', component: LastQuarterMoon },
-    { name: 'New Moon', component: NewMoon },
-    { name: 'Waning Gibbous', component: WaningGibbousMoon },
-    { name: 'Waxing Gibbous', component: WaxingGibbousMoon },
-    { name: 'Waning Crescent', component: WaningCrescentMoon },
-    { name: 'Waxing Crescent', component: WaxingCrescentMoon },
-    { name: 'First Quarter', component: FirstQuarterMoon }
-  ];
-
+<script>
   let { data } = $props();
 
-  const MoonSVG = moons.find((m) => m.name === data.phase)?.component;
+  const size = 48;
+  const r = size / 2;
+  const cx = r;
+  const cy = r;
 
-  setTheme(data.theme);
+  const angle = data.phase * 2 * Math.PI;
+  const k = Math.cos(angle);
+
+  const rx = Math.max(0.001, r * Math.abs(k));
+
+  const path = `
+M ${cx} ${cy - r}
+A ${r} ${r} 0 1 1 ${cx} ${cy + r}
+A ${rx} ${r} 0 1 ${data.isWaxing ? 0 : 1} ${cx} ${cy - r}
+Z
+`;
 </script>
 
 <div
-  class="md:fixed md:top-4 md:left-4 flex items-center justify-start pt-[15px] max-[310px]:flex-col"
+  class="fixed top-4 left-4 max-md:left-1/2 max-md:-translate-x-1/2 z-50 bg-(--surface0) border border-(--overlay0) rounded-xl p-4"
 >
-  {#if data}
-    <MoonSVG />
-    <div
-      class="ml-[15px] text-center text-(--accent2) text-[clamp(12px,2vw,16px)] max-[310px]:ml-0 max-[310px]:mt-4"
-    >
-      <h3 class="mt-[5px] font-normal leading-tight">Moon phase: {data.phase}</h3>
-      <h3 class="mt-[5px] font-normal leading-tight">
-        Current moon age: {data.age.toFixed(1)} days
-      </h3>
+  <div class="flex items-center gap-4">
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+      <circle {r} {cx} {cy} fill="var(--base)" />
+      <path d={path} fill="var(--mauve)" />
+    </svg>
 
-      {#if data.daysToFullMoon > 0}
-        <h3 class="mt-[5px] font-normal leading-tight">
-          Days until full moon: {data.daysToFullMoon.toFixed(1)}
-        </h3>
-      {:else}
-        <div class="mt-[5px]">
-          <h3 class="font-normal leading-tight">It's full moon again.</h3>
-          <h3 class="font-normal leading-tight">Crazy how time flies, isn't it?</h3>
+    <div class="flex flex-col gap-0.5 min-w-0">
+      <div class="text-xs text-(--subtext1)">
+        {data.phaseName}
+      </div>
+      <div class="text-sm text-(--text)">
+        Age: {data.age.toFixed(2)}
+      </div>
+      {#if data.phaseName !== 'Full Moon'}
+        <div class="text-xs text-(--mauve)">
+          {data.daysToFullMoon.toFixed(2)} days to full
         </div>
+      {:else}
+        <div class="text-xs text-(--mauve)">It's full moon again</div>
       {/if}
     </div>
-  {:else}
-    <div class="animate-pulse italic opacity-70">Watching moon...</div>
-  {/if}
+  </div>
 </div>
