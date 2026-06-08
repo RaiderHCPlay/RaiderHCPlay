@@ -39,17 +39,6 @@
     content="RaiderHCPlay, web developer, portfolio, solo dev, developer portfolio, SvelteKit, Svelte"
   />
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "RaiderHCPlay",
-      "url": "https://raiderhcplay.vercel.app/",
-      "image": "https://avatars.githubusercontent.com/u/170134946?v=4",
-      "description": "Dev portfolio of RaiderHCPlay - a student and a developer",
-      "sameAs": ["https://github.com/RaiderHCPlay", "https://wakatime.com/@RaiderHCPlay"]
-    }
-  </script>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="RaiderHCPlay" />
   <meta
