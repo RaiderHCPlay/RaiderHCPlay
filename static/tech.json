@@ -30,8 +30,8 @@
 		"category": "exploring"
 	},
   {
-    "name": "Zig",
-    "icon": "https://cdn.simpleicons.org/zig",
+    "name": "Rust",
+    "icon": "https://cdn.simpleicons.org/rust",
     "category": "exploring"
   }
 ]
