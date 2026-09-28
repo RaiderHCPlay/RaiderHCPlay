@@ -3,13 +3,18 @@
   import { dev } from '$app/environment';
   import { injectAnalytics } from '@vercel/analytics/sveltekit';
   import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
-  import { init } from '$lib/data/theme';
 
   let { data, children } = $props();
+
+  $effect(() => {
+    const theme = document.documentElement.getAttribute('data-theme');
+    if (theme !== data.moon.theme) {
+      document.documentElement.setAttribute('data-theme', data.moon.theme);
+    }
+  });
   import '../app.css';
   import Footer from '$lib/components/Footer.svelte';
 
-  init();
   injectSpeedInsights();
   injectAnalytics({ mode: dev ? 'development' : 'production' });
 </script>
@@ -46,17 +51,10 @@
     content="Dev portfolio of RaiderHCPlay - a student and a web developer"
   />
   <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/170134946?v=4" />
-  <script type="text/javascript">
-    (() => {
-      const theme = localStorage.getItem('raiderhcplay-website-theme') || 'normal';
-      document.documentElement.dataset.theme = theme;
-    })();
-  </script>
-
   <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 </svelte:head>
 
-<div class="absolute left-[45px] top-[20px] max-[310px]:left-1/2 max-[310px]:-translate-x-1/2">
+<div class="absolute left-11.25 top-5 max-[310px]:left-1/2 max-[310px]:-translate-x-1/2">
   <Moon data={data.moon} />
 </div>
 {@render children?.()}
@@ -134,5 +132,14 @@
     height: 100%;
     background-color: var(--base);
     overscroll-behavior: none;
+  }
+
+  :global(*) {
+    transition:
+      background-color 250ms ease,
+      color 250ms ease,
+      border-color 250ms ease,
+      fill 250ms ease,
+      stroke 250ms ease;
   }
 </style>

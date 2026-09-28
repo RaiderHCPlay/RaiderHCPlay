@@ -4,36 +4,38 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --bun vite dev",
-    "build": "bun --bun vite build",
-    "preview": "bun --bun vite preview",
-    "check": "bunx svelte-kit sync && bunx svelte-check --tsconfig ./tsconfig.json",
-    "lint": "oxlint",
-    "lint:fix": "oxlint --fix",
-    "format": "bunx oxfmt --write .",
-    "format:check": "bunx oxfmt --check .",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && bunx svelte-check --tsconfig ./tsconfig.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
     "gen": "ruby ./scripts/gen.rb",
-    "run:checks": "ruby ./scripts/checks.rb"
+    "checks": "ruby ./scripts/checks.rb"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.4",
+    "@tailwindcss/vite": "^4.3.3",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "tailwindcss": "^4.2.4"
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@sveltejs/adapter-auto": "^7.0.1",
-    "@sveltejs/kit": "^2.58.0",
-    "@sveltejs/vite-plugin-svelte": "^7.0.0",
-    "@types/node": "^25.6.0",
-    "eslint-plugin-svelte": "^3.19.0",
-    "globals": "^17.5.0",
-    "oxfmt": "^0.54.0",
-    "oxlint": "^1.69.0",
-    "svelte": "^5.55.5",
-    "svelte-check": "^4.4.7",
+    "@sveltejs/kit": "^2.70.3",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@types/node": "^26.6.3",
+    "eslint": "^10.11.0",
+    "eslint-plugin-svelte": "^3.23.0",
+    "globals": "^17.12.0",
+    "oxfmt": "^0.70.0",
+    "oxlint": "^1.85.0",
+    "svelte": "^5.57.1",
+    "svelte-check": "^4.7.6",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.1",
-    "vite": "latest"
+    "typescript-eslint": "^8.70.1",
+    "vite": "^8.3.1"
   }
 }

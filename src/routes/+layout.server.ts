@@ -8,20 +8,18 @@ export const load: LayoutServerLoad = async ({ fetch }) => {
 
   const cycleDays = 29.53058867;
   const fullMoonAge = cycleDays / 2;
-
-  if (data.phase === 'Full Moon') {
+  if (data.phaseName === 'Full Moon') {
     daysToFullMoon = 0;
   } else if (data.age < fullMoonAge) {
     daysToFullMoon = fullMoonAge - data.age;
   } else {
     daysToFullMoon = cycleDays - data.age + fullMoonAge;
   }
-
   return {
     moon: {
       ...data,
       daysToFullMoon,
-      theme: data.phase === 'Full Moon' ? 'moon' : 'normal'
+      theme: data.phaseName === 'Full Moon' ? 'moon' : 'normal'
     }
   };
 };
